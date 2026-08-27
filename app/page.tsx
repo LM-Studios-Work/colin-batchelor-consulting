@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-
 const logoUrl = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sig-2J1XEymLTGNjD9CKHsHTHxgX5UST5S.jpg'
 const heroImage = 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=85'
 
@@ -12,8 +8,6 @@ const services = [
 ]
 
 export default function Page() {
-  const logoTrack = useRef<HTMLDivElement>(null)
-  const scrollLogos = (direction: number) => logoTrack.current?.scrollBy({ left: direction * 220, behavior: 'smooth' })
   return (
     <main>
       <header className="site-header">
@@ -52,11 +46,7 @@ export default function Page() {
 
       <section id="projects" className="projects"><div className="projects-heading"><h2>Reference projects.</h2><a className="project-button" href="/projects">View all projects <span>›</span></a></div><div className="project-grid"><article><div className="project-image project-image-one" /><div className="project-meta"><h3>Water infrastructure delivery</h3><p>Water & sanitation</p></div></article><article className="featured-project"><div className="project-image project-image-two" /><div className="project-meta"><h3>Programme leadership</h3><p>Complex infrastructure</p></div></article><article><div className="project-image project-image-three" /><div className="project-meta"><h3>Power and process systems</h3><p>Energy & industrial</p></div></article></div></section>
 
-      <section id="clients" className="clients" aria-label="Companies I have worked with"><h2>Companies I have worked with</h2><div className="logo-carousel"><button className="carousel-arrow" aria-label="Previous companies" onClick={() => scrollLogos(-1)}>‹</button><div className="logo-track" ref={logoTrack}><div className="client-logo">RAND WATER</div><div className="client-logo">SASOL</div><div className="client-logo">SANRAL</div><div className="client-logo">CESA</div><div className="client-logo">ESKOM</div></div><button className="carousel-arrow" aria-label="Next companies" onClick={() => scrollLogos(1)}>›</button></div></section>
-
-      <section id="experience" className="value section-grid"><div><h2>Senior direction<br />when the stakes<br />are high.</h2></div><div className="value-list">{['Project recovery & turnaround mandates', 'Design management & construction oversight', 'Commercial leadership, joint ventures & PPPs', 'FIDIC, NEC & dispute resolution'].map((item) => <a href="#contact" key={item}><span>↗</span>{item}</a>)}</div></section>
-
-      <section id="faq" className="faq"><div className="faq-heading"><h2>Questions, answered.</h2></div><div className="faq-list"><details><summary>What kind of assignments does Colin take on?</summary><p>Senior project direction, interim management, recovery mandates and strategic delivery support.</p></details><details><summary>Where is Colin available to work?</summary><p>Open to selected international assignments, with a focus on complex infrastructure and delivery leadership.</p></details><details><summary>How can we start a conversation?</summary><p>Send a short outline of your programme, challenge or requirement and Colin will respond directly.</p></details></div></section>
+      <section id="faq" className="faq"><div className="faq-heading"><h2>Questions, answered.</h2></div><div className="faq-list"><details><summary className="faq-summary">What kind of assignments does Colin take on?</summary><p>Senior project direction, interim management, recovery mandates and strategic delivery support.</p></details><details><summary>Where is Colin available to work?</summary><p>Open to selected international assignments, with a focus on complex infrastructure and delivery leadership.</p></details><details><summary>How can we start a conversation?</summary><p>Send a short outline of your programme, challenge or requirement and Colin will respond directly.</p></details></div></section>
 
       <section id="contact" className="contact"><p className="eyebrow">OPEN TO FULL-TIME, PART-TIME & INTERIM ASSIGNMENTS</p><h2>Bring experienced leadership to the programme that cannot afford to drift.</h2><div className="contact-bottom"><p>Open to roles with project houses, EPC/EPCM organisations, consulting firms and owners’ teams — particularly where organisational development, design leadership or delivery recovery is required.</p><a className="contact-link" href="mailto:colin@colinbatchelor.com">Start a conversation <span>↗</span></a></div></section>
 
