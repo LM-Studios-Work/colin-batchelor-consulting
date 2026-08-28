@@ -4,6 +4,7 @@ import { Cormorant_Garamond } from 'next/font/google'
 const displayFont = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-display' })
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import { ClientsStrip, SiteFooter, SiteHeader } from '@/components/site-chrome'
 
 export const metadata: Metadata = {
   title: 'Colin Batchelor Consulting | Infrastructure Leadership',
@@ -17,5 +18,5 @@ export const viewport: Viewport = {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" className={`bg-background ${displayFont.variable}`}><body>{children}{process.env.NODE_ENV === 'production' && <Analytics />}</body></html>
+  return <html lang="en" className={`bg-background ${displayFont.variable}`}><body><SiteHeader />{children}<ClientsStrip /><SiteFooter />{process.env.NODE_ENV === 'production' && <Analytics />}</body></html>
 }
