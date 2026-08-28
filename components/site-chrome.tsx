@@ -2,6 +2,24 @@ const logoUrl = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sig-2J1
 
 const clients = ['RAND WATER', 'SASOL', 'SANRAL', 'CESA', 'ESKOM']
 
+export function SiteHeader() {
+  return (
+    <header className="site-header">
+      <a href="/#top" className="brand" aria-label="Colin Batchelor Consulting home">
+        <img src={logoUrl} alt="Colin Batchelor Consulting" />
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/about">About</a>
+        <details className="nav-menu"><summary>Services</summary><div className="nav-dropdown"><a href="/#services">Project Management</a><a href="/#services">Interim Management</a><a href="/#services">Business Development</a></div></details>
+        <a href="/#experience">Experience</a>
+        <a href="/#projects">Reference Projects</a>
+        <a href="/#faq">Testimonials</a>
+      </nav>
+      <a className="contact-button" href="/#contact">Contact</a>
+    </header>
+  )
+}
+
 export function ClientsStrip() {
   return (
     <section className="clients" aria-labelledby="clients-heading">

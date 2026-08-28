@@ -10,20 +10,6 @@ const services = [
 export default function Page() {
   return (
     <main>
-      <header className="site-header">
-        <a href="#top" className="brand" aria-label="Colin Batchelor Consulting home">
-          <img src={logoUrl} alt="Colin Batchelor Consulting" />
-        </a>
-        <nav aria-label="Primary navigation">
-          <a href="/about">About</a>
-          <details className="nav-menu"><summary>Services</summary><div className="nav-dropdown"><a href="#services">Project Management</a><a href="#services">Interim Management</a><a href="#services">Business Development</a></div></details>
-          <a href="#experience">Experience</a>
-          <a href="#experience">Reference Projects</a>
-          <a href="#faq">Testimonials</a>
-        </nav>
-        <a className="contact-button" href="#contact">Contact</a>
-      </header>
-
       <section id="top" className="hero" aria-label="Introduction">
         <div className="hero-copy">
           <div className="red-rule" />

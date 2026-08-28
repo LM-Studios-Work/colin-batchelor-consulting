@@ -145,3 +145,5 @@ The Services dropdown is positioned below and centered on the Services label, us
 - Reuse `ClientsStrip` and `SiteFooter` from `components/site-chrome.tsx`; do not duplicate footer or client markup inside individual pages.
 - FAQ disclosures must use the shared `.faq-summary` class so every item receives the same closed down-chevron and open up-chevron behavior.
 - About-page CV downloads use the compact shared CTA treatment and link to `/cv.pdf` until a final CV asset is supplied.
+- The shared site header is rendered from `app/layout.tsx`, remains sticky at the top while scrolling, and must not be duplicated inside route pages.
+- Preserve the existing sponsor/client strip presentation: white background, compact spacing, centered editorial heading, and the five listed client names. Do not reinvent or replace it with a carousel or alternate treatment without explicit direction.
