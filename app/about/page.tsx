@@ -30,6 +30,7 @@ export default function AboutPage() {
           <p>Across roles in Afghanistan, India, UAE, Saudi Arabia, Sub-Saharan Africa, and South Africa, Colin has led major capital programmes, turnaround mandates, and engineering teams of more than 200 people. His experience spans design management, licensed technologies, construction oversight, commercial leadership, JV formation, PPPs, and dispute resolution.</p>
           <p>He has directed landmark projects including NEOM Oxagon, the Dravyavati River Project, the Dharavi WwTF, and multiple national water and wastewater schemes, working with the World Bank, African Development Bank, Asian Development Bank, and USAID.</p>
           <div className="about-credentials">CEng · PMP · Honours, Imperial College London · Fellow, Water Institute of Southern Africa</div>
+          <a className="project-button about-cv-button" href="/cv.pdf" download>Download CV <span>↓</span></a>
         </div>
       </section>
 
