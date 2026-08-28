@@ -10,12 +10,6 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="about-page">
-      <header className="site-header">
-        <a href="/" className="brand" aria-label="Colin Batchelor Consulting home"><img src={logoUrl} alt="Colin Batchelor Consulting" /></a>
-        <nav aria-label="Primary navigation"><a href="/about">About</a><a href="/#services">Services</a><a href="/#projects">Experience</a><a href="/#projects">Reference Projects</a><a href="/#faq">Testimonials</a></nav>
-        <a className="contact-button" href="/#contact">Contact</a>
-      </header>
-
       <section className="about-intro">
         <div className="about-kicker">ABOUT COLIN BATCHELOR</div>
         <h1>Experienced leadership for complex infrastructure.</h1>
