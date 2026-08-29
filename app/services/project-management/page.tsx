@@ -45,7 +45,7 @@ export default function ProjectManagementPage() {
           <div className="shrink-0 text-center md:text-left mt-2 md:mt-4">
             <a href="/contact" className="contact-button inline-flex items-center gap-3 transition-colors">
               DISCUSS AN ASSIGNMENT
-              <span className="text-lg font-normal translate-y-[-1px] ml-1">↗</span>
+              <span className="text-lg font-normal translate-y-[-1px] ml-1">&#x2197;&#xFE0E;</span>
             </a>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function ProjectManagementPage() {
       <section className="contact service-page-contact">
         <p className="eyebrow">PROJECT MANAGEMENT</p>
         <h2>When the programme matters, the leadership should too.</h2>
-        <a className="contact-link" href="/contact">Discuss an assignment <span>↗</span></a>
+        <a className="contact-link" href="/contact">Discuss an assignment <span>&#x2197;&#xFE0E;</span></a>
       </section>
     </main>
   )

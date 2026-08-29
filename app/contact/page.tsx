@@ -93,7 +93,7 @@ export default function ContactPage() {
               <div className="pt-2">
                 <button type="submit" className="contact-button w-full md:w-auto inline-flex items-center justify-center gap-3 cursor-pointer border-none text-center px-8 py-[14px]">
                   SEND MESSAGE
-                  <span className="text-lg font-normal translate-y-[-1px] ml-1">↗</span>
+                  <span className="text-lg font-normal translate-y-[-1px] ml-1">&#x2197;&#xFE0E;</span>
                 </button>
               </div>
             </form>

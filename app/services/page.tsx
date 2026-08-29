@@ -21,7 +21,7 @@ export default function ServicesPage() {
             <article id={service.id} className="service-page-card" key={service.id}>
             <div className="service-image service-page-image" aria-hidden="true" />
             <div className="service-content">
-              <div className="service-page-card-top"><span>{service.number}</span><a className="service-card-link" href={service.href}>Explore <span aria-hidden="true">↗</span></a></div>
+              <div className="service-page-card-top"><span>{service.number}</span><a className="service-card-link" href={service.href}>Explore <span aria-hidden="true">&#x2197;&#xFE0E;</span></a></div>
               <h2>{service.title}</h2>
               <p>{service.summary}</p>
               <ul>{service.items.map((item) => <li key={item}>{item}</li>)}</ul>

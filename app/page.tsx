@@ -22,7 +22,7 @@ export default function Page() {
 
       <section id="profile" className="profile section-grid">
         <div className="profile-photo"><img src="/images/colin-batchelor-headshot.png" alt="Colin Batchelor" /></div>
-        <div className="profile-text"><h2>Leadership for the work that matters.</h2><p>With more than 25 years leading complex EPC, PMC and EPCM programmes, Colin brings the judgement needed when capital projects become technically demanding, commercially exposed, or operationally critical.</p><p>His work spans water, power, process, mining and urban infrastructure across international markets.</p><a className="text-link" href="/about">More about Colin <span>↗</span></a><div className="credential">Chartered Mechanical Engineer · PMP-certified · Imperial College London · Fellow, Water Institute of Southern Africa</div></div>
+        <div className="profile-text"><h2>Leadership for the work that matters.</h2><p>With more than 25 years leading complex EPC, PMC and EPCM programmes, Colin brings the judgement needed when capital projects become technically demanding, commercially exposed, or operationally critical.</p><p>His work spans water, power, process, mining and urban infrastructure across international markets.</p><a className="text-link" href="/about">More about Colin <span>&#x2197;&#xFE0E;</span></a><div className="credential">Chartered Mechanical Engineer · PMP-certified · Imperial College London · Fellow, Water Institute of Southern Africa</div></div>
       </section>
 
       <section id="services" className="services section-grid">
@@ -34,7 +34,7 @@ export default function Page() {
 
       <section id="faq" className="faq"><div className="faq-heading"><h2>Questions, answered.</h2></div><div className="faq-list"><details><summary className="faq-summary">What kind of assignments does Colin take on?</summary><p>Senior project direction, interim management, recovery mandates and strategic delivery support.</p></details><details><summary className="faq-summary">Where is Colin available to work?</summary><p>Open to selected international assignments, with a focus on complex infrastructure and delivery leadership.</p></details><details><summary className="faq-summary">How can we start a conversation?</summary><p>Send a short outline of your programme, challenge or requirement and Colin will respond directly.</p></details></div></section>
 
-      <section id="contact" className="contact"><p className="eyebrow">OPEN TO FULL-TIME, PART-TIME & INTERIM ASSIGNMENTS</p><h2>Bring experienced leadership to the programme that cannot afford to drift.</h2><div className="contact-bottom"><p>Open to roles with project houses, EPC/EPCM organisations, consulting firms and owners’ teams — particularly where organisational development, design leadership or delivery recovery is required.</p><a className="contact-link" href="/contact">Start a conversation <span>↗</span></a></div></section>
+      <section id="contact" className="contact"><p className="eyebrow">OPEN TO FULL-TIME, PART-TIME & INTERIM ASSIGNMENTS</p><h2>Bring experienced leadership to the programme that cannot afford to drift.</h2><div className="contact-bottom"><p>Open to roles with project houses, EPC/EPCM organisations, consulting firms and owners’ teams — particularly where organisational development, design leadership or delivery recovery is required.</p><a className="contact-link" href="/contact">Start a conversation <span>&#x2197;&#xFE0E;</span></a></div></section>
 
     </main>
   )
