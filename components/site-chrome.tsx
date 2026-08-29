@@ -57,7 +57,7 @@ export function SiteHeader() {
       </a>
       <nav aria-label="Primary navigation">
         <a href="/about" className={isAbout ? 'nav-active' : ''}>About</a>
-        <details className="nav-menu"><summary className={isServices ? 'nav-active' : ''}><a href="/services">Services</a></summary><div className="nav-dropdown"><a href="/services/project-management">Project Management</a><a href="/services#interim-management">Interim Management</a><a href="/services#business-development">Business Development</a></div></details>
+        <details className="nav-menu"><summary className={isServices ? 'nav-active' : ''}>Services</summary><div className="nav-dropdown"><a href="/services/project-management">Project Management</a><a href="/services#interim-management">Interim Management</a><a href="/services#business-development">Business Development</a></div></details>
         <a href="/#experience" className={isHome ? 'nav-active-home' : ''}>Experience</a>
         <a href="/#projects" className={isHome ? 'nav-active-home' : ''}>Reference Projects</a>
         <a href="/#faq" className={isHome ? 'nav-active-home' : ''}>Testimonials</a>
@@ -116,7 +116,7 @@ export function SiteFooter() {
   return (
     <footer>
       <div className="footer-brand"><img src={logoUrl} alt="Colin Batchelor Consulting" /><p>Complex infrastructure. Clear leadership.</p></div>
-      <div className="footer-links"><strong>Navigate</strong><a href="/about">About</a><a href="/#services">Services</a><a href="/#projects">Reference Projects</a><a href="/#faq">FAQs</a></div>
+      <div className="footer-links"><strong>Navigate</strong><a href="/about">About</a><a href="/services">Services</a><a href="/#projects">Reference Projects</a><a href="/#faq">FAQs</a></div>
       <div className="footer-links"><strong>Services</strong><a href="/services">All services</a><a href="/services/project-management">Project Management</a><a href="/services#interim-management">Interim Management</a><a href="/services#business-development">Business Development</a></div>
       <div className="footer-contact"><span>Available for senior assignments</span><a href="mailto:colin@colinbatchelor.com">colin@colinbatchelor.com</a><span>CEng · PMP · FIMWSA</span></div>
     </footer>
