@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 const logoUrl = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sig-2J1XEymLTGNjD9CKHsHTHxgX5UST5S.jpg'
@@ -9,8 +9,45 @@ const clients = ['RAND WATER', 'SASOL', 'SANRAL', 'CESA', 'ESKOM']
 
 export function SiteHeader() {
   const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false)
+  const menuRef = useRef<HTMLElement>(null)
+  const triggerRef = useRef<HTMLButtonElement>(null)
   const isHome = pathname === '/'
   const isAbout = pathname === '/about'
+
+  useEffect(() => {
+    if (!isOpen) return
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false)
+        return
+      }
+      if (event.key !== 'Tab' || !menuRef.current) return
+      const focusable = menuRef.current.querySelectorAll<HTMLElement>('a, button')
+      if (!focusable.length) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    menuRef.current?.querySelector<HTMLElement>('button, a')?.focus()
+    return () => {
+      document.body.style.overflow = previousOverflow
+      document.removeEventListener('keydown', handleKeyDown)
+      triggerRef.current?.focus()
+    }
+  }, [isOpen])
+
+  const closeMenu = () => setIsOpen(false)
+  const linkClass = (active: boolean) => `mobile-nav-link${active ? ' nav-active' : ''}`
 
   return (
     <header className="site-header">
@@ -24,7 +61,27 @@ export function SiteHeader() {
         <a href="/#projects" className={isHome ? 'nav-active-home' : ''}>Reference Projects</a>
         <a href="/#faq" className={isHome ? 'nav-active-home' : ''}>Testimonials</a>
       </nav>
-      <a className="contact-button" href="/#contact">Contact</a>
+      <a className="contact-button desktop-contact" href="/#contact">Contact</a>
+      <button ref={triggerRef} className="mobile-menu-trigger" type="button" aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={isOpen} aria-controls="mobile-navigation" onClick={() => setIsOpen((open) => !open)}>
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+      </button>
+      {isOpen && <div className="mobile-nav-backdrop" aria-hidden="true" onClick={closeMenu} />}
+      <aside ref={menuRef} id="mobile-navigation" className={`mobile-nav-panel${isOpen ? ' is-open' : ''}`} aria-label="Mobile navigation" aria-hidden={!isOpen}>
+        <div className="mobile-nav-header"><span className="mobile-nav-label">Menu</span><button type="button" className="mobile-nav-close" onClick={closeMenu} aria-label="Close navigation menu">×</button></div>
+        <nav className="mobile-nav-links" aria-label="Mobile primary navigation">
+          <a href="/about" className={linkClass(isAbout)} onClick={closeMenu}>About</a>
+          <span className="mobile-nav-group-label">Services</span>
+          <a href="/#services" onClick={closeMenu}>Project Management</a>
+          <a href="/#services" onClick={closeMenu}>Interim Management</a>
+          <a href="/#services" onClick={closeMenu}>Business Development</a>
+          <a href="/#experience" className={linkClass(isHome)} onClick={closeMenu}>Experience</a>
+          <a href="/#projects" className={linkClass(isHome)} onClick={closeMenu}>Reference Projects</a>
+          <a href="/#faq" className={linkClass(isHome)} onClick={closeMenu}>Testimonials</a>
+        </nav>
+        <a className="contact-button mobile-contact" href="/#contact" onClick={closeMenu}>Contact</a>
+      </aside>
     </header>
   )
 }
