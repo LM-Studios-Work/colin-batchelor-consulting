@@ -13,19 +13,15 @@ export default function ContactPage() {
   return (
     <main className="contact-page">
       <section className="contact-page-intro">
-        <div>
-          <p className="eyebrow">START A CONVERSATION</p>
-          <h1>Let&apos;s discuss what the programme needs next.</h1>
-        </div>
-        <p className="contact-page-lede">Share a little about the challenge, the assignment or the decision in front of you. Colin will respond directly.</p>
+        <p className="eyebrow">START A CONVERSATION</p>
+        <h1>Tell me what needs moving forward.</h1>
+        <p className="contact-page-lede">Share the essentials below and Colin will respond directly.</p>
       </section>
 
       <section className="contact-form-section" aria-labelledby="contact-form-heading">
-        <div className="contact-form-aside">
-          <p className="contact-form-label">CONTACT</p>
+        <div className="contact-form-heading">
+          <p className="contact-form-label">CONTACT FORM</p>
           <h2 id="contact-form-heading">A clear brief is a good place to begin.</h2>
-          <p>Whether a project needs direction, recovery or an experienced pair of hands, send the essentials below.</p>
-          <a className="contact-email" href="mailto:colin@colinbatchelor.com">colin@colinbatchelor.com <span>↗</span></a>
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
