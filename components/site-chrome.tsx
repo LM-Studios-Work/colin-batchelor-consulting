@@ -70,7 +70,7 @@ export function SiteHeader() {
         <a href="/impact" className={pathname.startsWith('/impact') ? 'nav-active' : ''}>Impact & Case Studies</a>
         <a href="/#faq" className={isHome ? 'nav-active-home' : ''}>Testimonials</a>
       </nav>
-      <a className="contact-button desktop-contact" href="/#contact">Contact</a>
+      <a className="contact-button desktop-contact" href="/contact">Contact</a>
       <button ref={triggerRef} className="mobile-menu-trigger" type="button" aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={isOpen} aria-controls="mobile-navigation" onClick={() => setIsOpen((open) => !open)}>
         <span aria-hidden="true" />
         <span aria-hidden="true" />
@@ -100,7 +100,7 @@ export function SiteHeader() {
           <a href="/impact" className={linkClass(pathname.startsWith('/impact'))} onClick={closeMenu}>Impact & Case Studies</a>
           <a href="/#faq" className={linkClass(isHome)} onClick={closeMenu}>Testimonials</a>
         </nav>
-        <a className="contact-button mobile-contact" href="/#contact" onClick={closeMenu}>Contact</a>
+        <a className="contact-button mobile-contact" href="/contact" onClick={closeMenu}>Contact</a>
       </aside>
     </header>
   )

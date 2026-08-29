@@ -20,10 +20,10 @@ export default function ProjectManagementPage() {
     <main>
       {/* Hero Section */}
       <section 
-        className="relative min-h-[480px] flex flex-col justify-center px-[5.3vw] py-20 bg-cover bg-center" 
-        style={{ backgroundImage: "linear-gradient(rgba(35,35,35,0.65), rgba(35,35,35,0.65)), url('https://images.unsplash.com/photo-1541888081498-844fb26a1618?auto=format&fit=crop&w=1800&q=85')" }}
+        className="relative flex flex-col justify-center px-[5.3vw] pt-[96px] pb-[82px] bg-cover bg-center" 
+        style={{ backgroundImage: "linear-gradient(rgba(35,35,35,0.65), rgba(35,35,35,0.65)), url('/case%20study%20hero%20image.jpg')" }}
       >
-        <div className="max-w-4xl text-white mt-12 md:mt-0">
+        <div className="max-w-4xl text-white">
           <p className="text-[#e8e6e1] text-[10px] font-bold tracking-[0.13em] uppercase mb-4">SERVICE 01 · PROJECT MANAGEMENT</p>
           <h1 className="text-4xl md:text-5xl lg:text-[56px] leading-[1] font-semibold mb-6 font-serif tracking-tight">Make complex delivery feel deliberate.</h1>
           <div className="w-16 h-1 bg-[#b5122b] mb-6"></div>
@@ -43,7 +43,7 @@ export default function ProjectManagementPage() {
             </p>
           </div>
           <div className="shrink-0 text-center md:text-left mt-2 md:mt-4">
-            <a href="/#contact" className="inline-flex items-center gap-3 bg-[#b5122b] text-white px-6 py-4 font-bold text-[11px] tracking-[0.08em] uppercase hover:bg-[#8f0d21] transition-colors">
+            <a href="/contact" className="contact-button inline-flex items-center gap-3 transition-colors">
               DISCUSS AN ASSIGNMENT
               <span className="text-lg font-normal translate-y-[-1px] ml-1">↗</span>
             </a>
@@ -57,16 +57,16 @@ export default function ProjectManagementPage() {
           {/* Image Collage Area */}
           <div className="relative h-[450px] md:h-[600px] hidden md:block">
             <div 
-              className="absolute top-0 right-[5%] w-[60%] h-[240px] bg-cover bg-center rounded-xl border-[6px] border-[#242424] shadow-2xl z-10" 
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80')" }}
+              className="absolute top-0 right-[5%] w-[60%] h-[240px] bg-cover bg-center border-[6px] border-[#242424] shadow-2xl z-10" 
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80')" }}
             ></div>
             <div 
-              className="absolute top-[200px] left-0 w-[65%] h-[200px] bg-cover bg-center rounded-xl border-[6px] border-[#242424] shadow-2xl z-20" 
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80')" }}
+              className="absolute top-[200px] left-0 w-[65%] h-[200px] bg-cover bg-center border-[6px] border-[#242424] shadow-2xl z-20" 
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80')" }}
             ></div>
             <div 
-              className="absolute bottom-0 right-0 w-[75%] h-[240px] bg-cover bg-center rounded-xl border-[6px] border-[#242424] shadow-2xl z-30" 
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80')" }}
+              className="absolute bottom-0 right-0 w-[75%] h-[240px] bg-cover bg-center border-[6px] border-[#242424] shadow-2xl z-30" 
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=80')" }}
             ></div>
           </div>
           
@@ -102,7 +102,7 @@ export default function ProjectManagementPage() {
       <section className="contact service-page-contact">
         <p className="eyebrow">PROJECT MANAGEMENT</p>
         <h2>When the programme matters, the leadership should too.</h2>
-        <a className="contact-link" href="/#contact">Discuss an assignment <span>↗</span></a>
+        <a className="contact-link" href="/contact">Discuss an assignment <span>↗</span></a>
       </section>
     </main>
   )

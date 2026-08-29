@@ -16,7 +16,7 @@ export default function Page() {
           <p className="eyebrow light">EXECUTIVE PROJECT DIRECTOR · CENG · PMP</p>
           <h1>Complex infrastructure.<br />Clear leadership.</h1>
           <p className="hero-detail">EPC · PMC · EPCM<br />Water, power, process, mining and urban infrastructure</p>
-          <a href="/#contact" className="contact-button" style={{ marginTop: '32px' }}>Contact Me</a>
+          <a href="/contact" className="contact-button" style={{ marginTop: '32px' }}>Contact Me</a>
         </div>
       </section>
 
@@ -34,7 +34,7 @@ export default function Page() {
 
       <section id="faq" className="faq"><div className="faq-heading"><h2>Questions, answered.</h2></div><div className="faq-list"><details><summary className="faq-summary">What kind of assignments does Colin take on?</summary><p>Senior project direction, interim management, recovery mandates and strategic delivery support.</p></details><details><summary className="faq-summary">Where is Colin available to work?</summary><p>Open to selected international assignments, with a focus on complex infrastructure and delivery leadership.</p></details><details><summary className="faq-summary">How can we start a conversation?</summary><p>Send a short outline of your programme, challenge or requirement and Colin will respond directly.</p></details></div></section>
 
-      <section id="contact" className="contact"><p className="eyebrow">OPEN TO FULL-TIME, PART-TIME & INTERIM ASSIGNMENTS</p><h2>Bring experienced leadership to the programme that cannot afford to drift.</h2><div className="contact-bottom"><p>Open to roles with project houses, EPC/EPCM organisations, consulting firms and owners’ teams — particularly where organisational development, design leadership or delivery recovery is required.</p><a className="contact-link" href="mailto:colin@colinbatchelor.com">Start a conversation <span>↗</span></a></div></section>
+      <section id="contact" className="contact"><p className="eyebrow">OPEN TO FULL-TIME, PART-TIME & INTERIM ASSIGNMENTS</p><h2>Bring experienced leadership to the programme that cannot afford to drift.</h2><div className="contact-bottom"><p>Open to roles with project houses, EPC/EPCM organisations, consulting firms and owners’ teams — particularly where organisational development, design leadership or delivery recovery is required.</p><a className="contact-link" href="/contact">Start a conversation <span>↗</span></a></div></section>
 
     </main>
   )
