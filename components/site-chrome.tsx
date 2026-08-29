@@ -18,6 +18,7 @@ const clients = [
 export function SiteHeader() {
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
   const menuRef = useRef<HTMLElement>(null)
   const triggerRef = useRef<HTMLButtonElement>(null)
   const isHome = pathname === '/'
@@ -80,10 +81,22 @@ export function SiteHeader() {
         <div className="mobile-nav-header"><span className="mobile-nav-label">Menu</span><button type="button" className="mobile-nav-close" onClick={closeMenu} aria-label="Close navigation menu">×</button></div>
         <nav className="mobile-nav-links" aria-label="Mobile primary navigation">
           <a href="/about" className={linkClass(isAbout)} onClick={closeMenu}>About</a>
-          <a href="/services" className={linkClass(isServices)} onClick={closeMenu}>Services</a>
-          <a href="/services/project-management" onClick={closeMenu}>Project Management</a>
-          <a href="/services#interim-management" onClick={closeMenu}>Interim Management</a>
-          <a href="/services#business-development" onClick={closeMenu}>Business Development</a>
+          <button 
+            type="button" 
+            className={`mobile-dropdown-trigger ${isServices ? 'nav-active' : ''}`}
+            aria-expanded={isServicesOpen}
+            onClick={() => setIsServicesOpen(!isServicesOpen)}
+          >
+            Services
+          </button>
+          {isServicesOpen && (
+            <div className="mobile-dropdown-menu">
+              <a href="/services" className={pathname === '/services' ? 'nav-active' : ''} onClick={closeMenu}>All Services</a>
+              <a href="/services/project-management" className={pathname === '/services/project-management' ? 'nav-active' : ''} onClick={closeMenu}>Project Management</a>
+              <a href="/services#interim-management" onClick={closeMenu}>Interim Management</a>
+              <a href="/services#business-development" onClick={closeMenu}>Business Development</a>
+            </div>
+          )}
           <a href="/impact" className={linkClass(pathname.startsWith('/impact'))} onClick={closeMenu}>Impact & Case Studies</a>
           <a href="/#faq" className={linkClass(isHome)} onClick={closeMenu}>Testimonials</a>
         </nav>
@@ -94,30 +107,23 @@ export function SiteHeader() {
 }
 
 export function ClientsStrip() {
-  const trackRef = useRef<HTMLDivElement>(null)
+  const [carouselClients, setCarouselClients] = useState(clients)
 
   const scroll = (dir: 'left' | 'right') => {
-    if (!trackRef.current) return
-    const track = trackRef.current
-    
-    const item = track.firstElementChild as HTMLElement
-    if (!item) return
-    const style = window.getComputedStyle(track)
-    const gap = parseFloat(style.gap) || 0
-    const scrollAmount = item.offsetWidth + gap
-    
     if (dir === 'right') {
-      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
-        track.scrollTo({ left: 0, behavior: 'smooth' })
-      } else {
-        track.scrollBy({ left: scrollAmount, behavior: 'smooth' })
-      }
+      setCarouselClients((prev) => {
+        const next = [...prev]
+        const first = next.shift()
+        if (first) next.push(first)
+        return next
+      })
     } else {
-      if (track.scrollLeft <= 10) {
-        track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' })
-      } else {
-        track.scrollBy({ left: -scrollAmount, behavior: 'smooth' })
-      }
+      setCarouselClients((prev) => {
+        const next = [...prev]
+        const last = next.pop()
+        if (last) next.unshift(last)
+        return next
+      })
     }
   }
 
@@ -126,8 +132,8 @@ export function ClientsStrip() {
       <h2 id="clients-heading">Companies I have worked with</h2>
       <div className="logo-carousel">
         <button className="carousel-arrow" aria-label="Scroll left" onClick={() => scroll('left')}>&#8249;</button>
-        <div className="logo-track" ref={trackRef} role="list">
-          {clients.map((client) => (
+        <div className="logo-track" role="list" style={{ overflow: 'hidden' }}>
+          {carouselClients.map((client) => (
             <img key={client.name} src={client.src} alt={client.name} title={client.name} className="client-logo" role="listitem" />
           ))}
         </div>
