@@ -107,7 +107,10 @@ export function SiteHeader() {
 }
 
 export function ClientsStrip() {
+  const pathname = usePathname()
   const [carouselClients, setCarouselClients] = useState(clients)
+
+  if (pathname === '/contact') return null
 
   const scroll = (dir: 'left' | 'right') => {
     if (dir === 'right') {
