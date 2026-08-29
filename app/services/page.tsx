@@ -8,21 +8,29 @@ export const metadata = { title: 'Services | Colin Batchelor Consulting', descri
 
 export default function ServicesPage() {
   return (
-    <main className="services-directory-page">
-      <div className="service-page-cards" aria-label="Consulting services">
-        {services.map((service) => (
-          <article id={service.id} className="service-page-card" key={service.id}>
+    <main>
+      <section className="about-intro">
+        <div className="about-kicker">MARKET SEGMENTS</div>
+        <h1>Innovative engineering solutions for complex challenges.</h1>
+        <p className="about-lede">Explore the diverse industries we serve with tailored expertise designed to meet the most demanding infrastructure requirements.</p>
+      </section>
+      
+      <section className="services-directory-page" style={{ paddingTop: '90px' }}>
+        <div className="service-page-cards" aria-label="Consulting services">
+          {services.map((service) => (
+            <article id={service.id} className="service-page-card" key={service.id}>
             <div className="service-image service-page-image" aria-hidden="true" />
             <div className="service-content">
               <div className="service-page-card-top"><span>{service.number}</span><a className="service-card-link" href={service.href}>Explore <span aria-hidden="true">↗</span></a></div>
               <h2>{service.title}</h2>
               <p>{service.summary}</p>
               <ul>{service.items.map((item) => <li key={item}>{item}</li>)}</ul>
-              <a className="text-link service-page-cta" href={service.href}>View service <span aria-hidden="true">↗</span></a>
+
             </div>
           </article>
         ))}
       </div>
+      </section>
     </main>
   )
 }
