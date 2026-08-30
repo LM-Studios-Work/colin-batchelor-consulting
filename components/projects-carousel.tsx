@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 const projects = [
   {
@@ -35,6 +35,7 @@ const projects = [
 
 export function ProjectsCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null)
+  const [activeIndex, setActiveIndex] = useState(0)
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -43,21 +44,60 @@ export function ProjectsCarousel() {
     }
   }
 
-  return (
-    <div className="relative w-full overflow-hidden flex items-center gap-2 md:gap-6">
-      <button 
-        onClick={() => scroll('left')} 
-        className="carousel-arrow shrink-0 text-white bg-[#b5122b] hover:bg-[#8f0d21] flex items-center justify-center font-serif text-3xl" 
-        aria-label="Previous projects"
-      >
-        ‹
-      </button>
+  const handleScroll = () => {
+    if (!scrollRef.current) return
+    
+    const scrollContainer = scrollRef.current
+    const scrollPosition = scrollContainer.scrollLeft
+    
+    const items = Array.from(scrollContainer.children)
+    if (items.length === 0) return
+
+    const firstItemLeft = (items[0] as HTMLElement).offsetLeft
+    let currentIndex = 0
+    let minDistance = Infinity
+    
+    items.forEach((item, index) => {
+      const itemLeft = (item as HTMLElement).offsetLeft - firstItemLeft
+      const distance = Math.abs(scrollPosition - itemLeft)
       
-      <div 
-        ref={scrollRef} 
-        className="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-4 flex-1" 
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-      >
+      if (distance < minDistance) {
+        minDistance = distance
+        currentIndex = index
+      }
+    })
+    
+    setActiveIndex(currentIndex)
+  }
+
+  const scrollToSlide = (index: number) => {
+    if (scrollRef.current) {
+      const items = Array.from(scrollRef.current.children)
+      if (items[index]) {
+        const firstItemLeft = (items[0] as HTMLElement).offsetLeft
+        const itemLeft = (items[index] as HTMLElement).offsetLeft - firstItemLeft
+        scrollRef.current.scrollTo({ left: itemLeft, behavior: 'smooth' })
+      }
+    }
+  }
+
+  return (
+    <div className="flex flex-col w-full gap-4">
+      <div className="relative w-full overflow-hidden flex items-center gap-2 md:gap-6">
+        <button 
+          onClick={() => scroll('left')} 
+          className="hidden md:flex carousel-arrow shrink-0 text-white bg-[#b5122b] hover:bg-[#8f0d21] items-center justify-center font-serif text-3xl" 
+          aria-label="Previous projects"
+        >
+          ‹
+        </button>
+      
+        <div 
+          ref={scrollRef} 
+          onScroll={handleScroll}
+          className="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-4 flex-1" 
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
         {projects.map((project) => (
           <div 
             key={project.company} 
@@ -77,13 +117,29 @@ export function ProjectsCarousel() {
         ))}
       </div>
       
-      <button 
-        onClick={() => scroll('right')} 
-        className="carousel-arrow shrink-0 text-white bg-[#b5122b] hover:bg-[#8f0d21] flex items-center justify-center font-serif text-3xl" 
-        aria-label="Next projects"
-      >
-        ›
-      </button>
+        <button 
+          onClick={() => scroll('right')} 
+          className="hidden md:flex carousel-arrow shrink-0 text-white bg-[#b5122b] hover:bg-[#8f0d21] items-center justify-center font-serif text-3xl" 
+          aria-label="Next projects"
+        >
+          ›
+        </button>
+      </div>
+
+      <div className="flex justify-center items-center gap-2 mt-2">
+        {projects.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => scrollToSlide(index)}
+            className={`h-[4px] transition-all duration-300 rounded-full ${
+              activeIndex === index 
+                ? 'w-8 bg-[#b5122b]' 
+                : 'w-4 bg-gray-300 hover:bg-gray-400'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
 
       <style jsx>{`
         .no-scrollbar::-webkit-scrollbar {
