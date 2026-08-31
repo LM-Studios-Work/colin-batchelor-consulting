@@ -11,18 +11,18 @@ export default function AboutPage() {
   return (
     <main className="about-page">
       <section className="about-intro" style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%), url('/about%20page%20hero.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="about-kicker">ABOUT COLIN BATCHELOR</div>
+        <div className="about-kicker">ABOUT ME</div>
         <h1>Experienced leadership for complex infrastructure.</h1>
-        <p className="about-lede">A senior executive and project director trusted with the programmes, turnarounds and delivery decisions that matter most.</p>
+        <p className="about-lede">I am a senior executive and project director trusted with the programmes, turnarounds, and delivery decisions that matter most.</p>
       </section>
 
       <section className="about-profile section-grid">
         <div className="about-headshot"><img src="/images/colin-batchelor-headshot.png" alt="Colin Batchelor" /></div>
         <div className="about-copy">
           <h2>More than 25 years delivering the work behind essential services.</h2>
-          <p>A Senior Executive and Project Director with more than 25 years of experience leading EPC, PMC and EPCM programmes across Water &amp; Wastewater, Power Generation &amp; Distribution, Process Industries, Mining &amp; Mineral Processing, Solid Waste Management, and Elevated Metrorail.</p>
-          <p>Across roles in Afghanistan, India, UAE, Saudi Arabia, Sub-Saharan Africa, and South Africa, Colin has led major capital programmes, turnaround mandates, and engineering teams of more than 200 people. His experience spans design management, licensed technologies, construction oversight, commercial leadership, JV formation, PPPs, and dispute resolution.</p>
-          <p>He has directed landmark projects including NEOM Oxagon, the Dravyavati River Project, the Dharavi WwTF, and multiple national water and wastewater schemes, working with the World Bank, African Development Bank, Asian Development Bank, and USAID.</p>
+          <p>As a Senior Executive and Project Director, I have more than 25 years of experience leading EPC, PMC, and EPCM programmes across Water &amp; Wastewater, Power Generation &amp; Distribution, Process Industries, Mining &amp; Mineral Processing, Solid Waste Management, and Elevated Metrorail.</p>
+          <p>Across mandates in Afghanistan, India, UAE, Saudi Arabia, Sub-Saharan Africa, and South Africa, I have led major capital programmes, turnaround operations, and engineering teams of more than 200 people. My experience spans design management, licensed technologies, construction oversight, commercial leadership, JV formation, PPPs, and dispute resolution.</p>
+          <p>I have directed landmark projects including NEOM Oxagon, the Dravyavati River Project, the Dharavi WwTF, and multiple national water and wastewater schemes. I frequently work alongside the World Bank, African Development Bank, Asian Development Bank, and USAID.</p>
           <div className="about-credentials">CEng · PMP · Honours, Imperial College London · Fellow, Water Institute of Southern Africa</div>
         </div>
       </section>

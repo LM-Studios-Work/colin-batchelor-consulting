@@ -1,6 +1,6 @@
 const services = [
   { id: 'project-management', number: '01', title: 'Project Management', summary: 'Experienced direction for complex programmes where delivery, governance and technical judgement must stay aligned.', items: ['Water and Sanitation', 'Power Generation and Distribution', 'Expert Witness'], href: '/services/project-management' },
-  { id: 'interim-management', number: '02', title: 'Interim Management', summary: 'Calm, accountable leadership when an organisation needs experienced hands at a critical moment.', items: ['Short Term Assignments', 'Business Rescue', 'Non-Executive Director'], href: '#interim-management' },
+  { id: 'interim-management', number: '02', title: 'Interim Management', summary: 'Calm, accountable leadership when an organisation needs experienced hands at a critical moment.', items: ['Interim Executive', 'Business Rescue', 'Non-Executive Director'], href: '#interim-management' },
   { id: 'business-development', number: '03', title: 'Business Development', summary: 'Practical commercial thinking to turn capability, relationships and opportunity into durable growth.', items: ['Strategy', 'Marketing and Sales', 'Executive Mentorship'], href: '#business-development' },
 ]
 
@@ -10,9 +10,9 @@ export default function ServicesPage() {
   return (
     <main>
       <section className="about-intro">
-        <div className="about-kicker">MARKET SEGMENTS</div>
+        <div className="about-kicker">MY MANDATES</div>
         <h1>Innovative engineering solutions for complex challenges.</h1>
-        <p className="about-lede">Explore the diverse industries we serve with tailored expertise designed to meet the most demanding infrastructure requirements.</p>
+        <p className="about-lede">Explore the diverse industries I serve. I provide tailored expertise designed to meet the most demanding infrastructure requirements.</p>
       </section>
       
       <section className="services-directory-page" style={{ paddingTop: '90px' }}>

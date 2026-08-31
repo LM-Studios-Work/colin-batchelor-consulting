@@ -18,7 +18,7 @@ export default function ContactPage() {
               START A CONVERSATION:
             </h1>
             <p className="text-gray-300 text-[15px] md:text-[16px] leading-[1.7] max-w-md">
-              For enquiries regarding project management, interim management, or business development assignments, please complete the form and Colin will respond directly.
+              For enquiries regarding project management, interim executive leadership, or advisory mandates, please complete the form. I will respond directly.
             </p>
             
             <div className="mt-14 space-y-8">

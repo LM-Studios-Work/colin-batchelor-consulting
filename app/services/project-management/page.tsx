@@ -6,13 +6,13 @@ export const metadata = {
 }
 
 const solutions = [
-  { title: 'Programme Governance & Delivery Assurance', desc: 'Establishing robust oversight mechanisms to ensure project health and adherence to strategic goals.' },
-  { title: 'Owner-side EPC, PMC and EPCM Leadership', desc: 'Representing owner interests across all major procurement and execution models to safeguard investments.' },
-  { title: 'Stakeholder & Contractor Alignment', desc: 'Bringing disjointed teams, consultants, and contractors together under a unified project vision.' },
-  { title: 'Recovery Planning for Programmes Under Pressure', desc: 'Stepping in when delivery has drifted to establish a clear, actionable path to completion.' },
-  { title: 'Establishing Constraints & Critical Decisions', desc: 'Creating a grounded view of current reality and constraints before dictating a path forward.' },
-  { title: 'Creating a Delivery Rhythm', desc: 'Instituting practical cadence with clear ownership, accountability, and escalation paths.' },
-  { title: 'Connecting Priorities', desc: 'Keeping technical, commercial, and operational priorities connected to ensure engineering decisions make commercial sense.' }
+  { title: 'Programme Governance & Delivery Assurance', desc: 'Establish robust oversight mechanisms to ensure project health and adherence to strategic goals.' },
+  { title: 'Owner-side EPC, PMC and EPCM Leadership', desc: 'Represent owner interests across all major procurement and execution models to safeguard investments.' },
+  { title: 'Stakeholder & Contractor Alignment', desc: 'Bring disjointed teams, consultants, and contractors together under a unified project vision.' },
+  { title: 'Recovery Planning for Programmes Under Pressure', desc: 'Step in when delivery has drifted. Establish a clear, actionable path to completion.' },
+  { title: 'Establishing Constraints & Critical Decisions', desc: 'Create a grounded view of current reality and constraints before dictating a path forward.' },
+  { title: 'Creating a Delivery Rhythm', desc: 'Institute practical cadence with clear ownership, accountability, and escalation paths.' },
+  { title: 'Connecting Priorities', desc: 'Keep technical, commercial, and operational priorities connected. Ensure engineering decisions make commercial sense.' }
 ]
 
 export default function ProjectManagementPage() {
@@ -39,12 +39,12 @@ export default function ProjectManagementPage() {
           <div className="flex-1">
             <h2 className="text-[34px] md:text-[40px] font-serif font-semibold leading-tight mb-6 text-[#292827]">Leadership that connects the moving parts.</h2>
             <p className="text-[#575550] text-[16px] md:text-[17px] leading-[1.7]">
-              Project management is more than a schedule and a set of reports. Colin brings an owner-minded view across technical interfaces, commercial exposure, governance and the people responsible for making progress real.
+              Project management is more than a schedule and a set of reports. I bring an owner-minded view across technical interfaces, commercial exposure, governance and the people responsible for making progress real.
             </p>
           </div>
           <div className="shrink-0 text-center md:text-left mt-2 md:mt-4">
             <a href="/contact" className="contact-button inline-flex items-center gap-3 transition-colors">
-              DISCUSS AN ASSIGNMENT
+              DISCUSS A MANDATE
               <span className="text-lg font-normal translate-y-[-1px] ml-1">&#x2197;&#xFE0E;</span>
             </a>
           </div>
@@ -100,9 +100,9 @@ export default function ProjectManagementPage() {
       
       {/* Contact CTA */}
       <section className="contact service-page-contact">
-        <p className="eyebrow">PROJECT MANAGEMENT</p>
+        <p className="eyebrow">RETAINED LEADERSHIP</p>
         <h2>When the programme matters, the leadership should too.</h2>
-        <a className="contact-link" href="/contact">Discuss an assignment <span>&#x2197;&#xFE0E;</span></a>
+        <a className="contact-link" href="/contact">Discuss a mandate <span>&#x2197;&#xFE0E;</span></a>
       </section>
     </main>
   )

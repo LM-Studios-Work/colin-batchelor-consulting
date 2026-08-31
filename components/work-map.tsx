@@ -26,7 +26,7 @@ export function WorkMap() {
           })}
         </Geographies>
       </ComposableMap>
-      <div className="map-caption"><span className="map-key" /> Countries and regions where Colin has delivered major programmes.</div>
+      <div className="map-caption"><span className="map-key" /> Countries and regions where I have delivered major programmes.</div>
     </div>
   )
 }
