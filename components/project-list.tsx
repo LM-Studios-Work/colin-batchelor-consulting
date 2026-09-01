@@ -10,17 +10,27 @@ const projects = [
     duration: '2 yrs 8 mos',
     date: 'Jan 2021 - Aug 2023',
     location: 'Saudi Arabia',
-    description: 'I served as Project Director for Oxagon (NEOM Industrial City) in Saudi Arabia for the Systra-Surbana-Jurong JV. We acted as the Multidisciplinary Design Consultant for the infrastructure of this Megaproject on the Red Sea Coast. The scope included comprehensive Wet and Dry Utilities, covering Water, Sewage, District Cooling, and HV to LV power reticulation. It also included Roads, Highways, Bridges, Tunnels, Landscaping, and Marine protection. I led a team of over 200 Professional Engineers across Riyadh and NEOM, integrating design centre support from partner operations in South Africa, India, and the UAE. We executed the design using BIM 360 for 3D design technology. The total installed value will exceed $10 Billion.\nAdditionally, I led an International Consulting Company in a feasibility study to redevelop the Port of Beirut following the catastrophic explosion. I also assisted a JV of International consultants in securing an important water treatment project valued at $1.5 Billion in the EU.',
+    description: 'I served as Project Director for Oxagon (NEOM Industrial City) in Saudi Arabia for the Systra-Surbana-Jurong JV. We acted as the Multidisciplinary Design Consultant for the infrastructure of this Megaproject on the Red Sea Coast. The scope included comprehensive Wet and Dry Utilities, covering Water, Sewage, District Cooling, and HV to LV power reticulation. It also included Roads, Highways, Bridges, Tunnels, Landscaping, and Marine protection. I led a team of over 200 Professional Engineers across Riyadh and NEOM, integrating design centre support from partner operations in South Africa, India, and the UAE. We executed the design using BIM 360 for 3D design technology. The total installed value will exceed $10 Billion.',
     image: '/projects/Systra Oxagon.webp'
   },
   {
-    company: 'Tata Projects',
+    company: 'Tata Projects — Dravyavati River Project',
     link: 'https://www.linkedin.com/company/155507/',
     role: 'Project Director',
-    duration: '4 yrs 6 mos',
+    duration: '',
     date: 'Jul 2016 - Dec 2020',
-    location: 'India',
-    description: 'PUNE ELEVATED METRO: This 23.3-km corridor with 23 stations will be the first metro project in India operating on a public-private-partnership (PPP) model following the New Metro Rail Policy of 2017. Tata Projects serves as the EPC partner supporting the consortium.\nDRAVYAVATI RIVER PROJECT: I was the Project Director responsible for this US$ 250 million EPC project for the rejuvenation of the Dravyavati River. Rapid urbanisation and industrialisation had resulted in a build-up of municipal solid waste while untreated sewage discharged into the river. This polluted the environment and created a public health hazard. We intercepted sewage flows into a sewer network running along the riverbank and built five Sewage Treatment Plants for 170 Mld. The project was completed ahead of schedule and within budget.',
+    location: 'Jaipur, India',
+    description: 'I was the Project Director responsible for this US$250 million EPC project for the rejuvenation of the Dravyavati River in Jaipur. Rapid urbanisation and industrialisation had resulted in a build-up of municipal solid waste while untreated sewage discharged into the river, polluting the environment and creating a public health hazard.\nWe intercepted sewage flows into a sewer network running along the riverbank and built five Sewage Treatment Plants for 170 Mld. The treated water was returned to the river, transforming it from an open drain into a restored urban waterway with landscaped banks, recreational spaces, and a clean flowing river.\nThe project was completed ahead of schedule and within budget, and has become a benchmark for river rejuvenation projects in India.',
+    image: '/projects/TATA pune metro rail line.jpg'
+  },
+  {
+    company: 'Tata Projects — Pune Elevated Metro',
+    link: 'https://www.linkedin.com/company/155507/',
+    role: 'Project Director',
+    duration: '',
+    date: 'Jul 2016 - Dec 2020',
+    location: 'Pune, India',
+    description: 'This 23.3-km corridor with 23 stations will be the first metro project in India operating on a public-private-partnership (PPP) model following the New Metro Rail Policy of 2017. Tata Projects serves as the EPC partner supporting the consortium.',
     image: '/projects/TATA pune metro rail line.jpg'
   },
   {

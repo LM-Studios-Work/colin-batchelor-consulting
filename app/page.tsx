@@ -13,16 +13,15 @@ export default function Page() {
       <section id="top" className="hero" aria-label="Introduction">
         <div className="hero-copy">
           <div className="red-rule" />
-          <p className="eyebrow light">EXECUTIVE PROJECT DIRECTOR · CENG · PMP</p>
-          <h1>Complex infrastructure.<br />Clear leadership.</h1>
-          <p className="hero-detail">EPC · PMC · EPCM<br />Water, power, process, mining and urban infrastructure</p>
+          <h1>Complex Infrastructure.<br />Clear Leadership.</h1>
+          <p className="hero-detail">EPCM, PMC, EPC<br />Water & Sanitation, Power Generation & Distribution, Petrochemical & Mineral Processing, Utilities & Urban Infrastructure.</p>
           <a href="/contact" className="contact-button" style={{ marginTop: '32px' }}>Contact Me</a>
         </div>
       </section>
 
       <section id="profile" className="profile section-grid">
         <div className="profile-photo"><img src="/images/colin-batchelor-headshot.png" alt="Colin Batchelor" /></div>
-        <div className="profile-text"><h2>Leadership for the work that matters.</h2><p>With more than 25 years leading complex EPC, PMC and EPCM programmes, I bring the judgement needed when capital projects become technically demanding, commercially exposed, or operationally critical.</p><p>My work spans water, power, process, mining and urban infrastructure across international markets.</p><a className="text-link" href="/about">Read my full profile <span>&#x2197;&#xFE0E;</span></a><div className="credential">Chartered Mechanical Engineer · PMP-certified · Imperial College London · Fellow, Water Institute of Southern Africa</div></div>
+        <div className="profile-text"><h2>Leadership for the work that matters.</h2><p>With more than 45 years leading complex EPCM, PMC and EPC programmes, I bring the judgement needed when capital projects become technically demanding, commercially exposed, or operationally critical.</p><p>My work spans Water & Sanitation, Power Generation & Distribution, Petrochemical & Mineral Processing, and Utilities & Urban Infrastructure across international markets.</p><a className="text-link" href="/about">Read my full profile <span>&#x2197;&#xFE0E;</span></a><div className="credential" style={{ textTransform: 'none' }}>C.Eng., MIMechE. BSc. Eng. Hons. ACGI., PMP(R) FWISA.</div></div>
       </section>
 
       <section id="services" className="services section-grid">

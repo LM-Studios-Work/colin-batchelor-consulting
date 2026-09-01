@@ -7,7 +7,7 @@ export const metadata = {
 
 const solutions = [
   { title: 'Programme Governance & Delivery Assurance', desc: 'Establish robust oversight mechanisms to ensure project health and adherence to strategic goals.' },
-  { title: 'Owner-side EPC, PMC and EPCM Leadership', desc: 'Represent owner interests across all major procurement and execution models to safeguard investments.' },
+  { title: 'Owner-side EPCM, PMC and EPC Leadership', desc: 'Represent owner interests across all major procurement and execution models to safeguard investments.' },
   { title: 'Stakeholder & Contractor Alignment', desc: 'Bring disjointed teams, consultants, and contractors together under a unified project vision.' },
   { title: 'Recovery Planning for Programmes Under Pressure', desc: 'Step in when delivery has drifted. Establish a clear, actionable path to completion.' },
   { title: 'Establishing Constraints & Critical Decisions', desc: 'Create a grounded view of current reality and constraints before dictating a path forward.' },

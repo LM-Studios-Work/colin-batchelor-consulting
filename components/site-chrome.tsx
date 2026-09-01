@@ -110,7 +110,7 @@ export function ClientsStrip() {
   const pathname = usePathname()
   const [carouselClients, setCarouselClients] = useState(clients)
 
-  if (pathname === '/contact') return null
+  if (pathname === '/contact' || pathname === '/impact') return null
 
   const scroll = (dir: 'left' | 'right') => {
     if (dir === 'right') {
