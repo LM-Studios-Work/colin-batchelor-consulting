@@ -21,7 +21,7 @@ export default function Page() {
 
       <section id="profile" className="profile section-grid">
         <div className="profile-photo"><img src="/images/colin-batchelor-headshot.png" alt="Colin Batchelor" /></div>
-        <div className="profile-text"><h2>Leadership for the work that matters.</h2><p>With more than 45 years leading complex EPCM, PMC and EPC programmes, I bring the judgement needed when capital projects become technically demanding, commercially exposed, or operationally critical.</p><p>My work spans Water & Sanitation, Power Generation & Distribution, Petrochemical & Mineral Processing, and Utilities & Urban Infrastructure across international markets.</p><a className="text-link" href="/about">Read my full profile <span>&#x2197;&#xFE0E;</span></a><div className="credential" style={{ textTransform: 'none' }}>C.Eng., MIMechE. BSc. Eng. Hons. ACGI., PMP(R) FWISA.</div></div>
+        <div className="profile-text"><h2>Leadership for the work that matters.</h2><p>With more than 45 years leading complex EPCM, PMC and EPC programmes, I bring the judgement needed when capital projects become technically demanding, commercially exposed, or operationally critical.</p><p>My work spans Water & Sanitation, Power Generation & Distribution, Petrochemical & Mineral Processing, and Utilities & Urban Infrastructure across international markets.</p><a className="text-link" href="/about">Read my full profile <span>&#x2197;&#xFE0E;</span></a><div className="credential" style={{ textTransform: 'none' }}>C.Eng., MIMechE. BSc. Eng. Hons. ACGI., PMP, FWISA.</div></div>
       </section>
 
       <section id="services" className="services section-grid">

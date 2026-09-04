@@ -19,7 +19,7 @@ export default function AboutPage() {
       <section className="about-profile section-grid">
         <div className="about-headshot">
           <img src="/images/colin-batchelor-headshot.png" alt="Colin Batchelor" />
-          <div style={{ marginTop: '16px', marginBottom: '32px', color: 'var(--primary)', fontSize: '15px', lineHeight: '1.5' }}>C.Eng., MIMechE. BSc. Eng. Hons. ACGI., PMP(R) FWISA.</div>
+          <div style={{ marginTop: '16px', marginBottom: '32px', color: 'var(--primary)', fontSize: '15px', lineHeight: '1.5' }}>C.Eng., MIMechE. BSc. Eng. Hons. ACGI., PMP, FWISA.</div>
         </div>
         <div className="about-copy">
           <h2>More than 45 years delivering the work behind essential services and industry.</h2>
