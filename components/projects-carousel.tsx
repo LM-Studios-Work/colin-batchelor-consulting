@@ -4,32 +4,32 @@ import { useRef, useState } from 'react'
 
 const projects = [
   {
-    company: 'SYSTRA-SurbanaJurong JV',
+    company: 'Oxagon (NEOM Industrial City)',
     role: 'Project Director',
     location: 'Saudi Arabia',
-    description: 'Project Director for Oxagon (NEOM Industrial City) in Saudi Arabia for Systra-Surbana-Jurong JV as Multidisciplinary Design Consultant for the infrastructure of this Megaproject on the Red Sea Coast.',
+    description: 'Project Director for Oxagon (NEOM Industrial City) in Saudi Arabia for Systra-Surbana-Jurong JV as Multidisciplinary Design Consultant for the infrastructure of this Megaproject on the Red Sea Coast. The scope included Wet and Dry Utilities - Water, Sewage, District Cooling HV (380kV), MV (33kV), LV (14kV) reticulation and so on; Roads, Highways, Bridges and Tunnels (Cut & Cover, TBM), Landscaping and Marine protection. Leading a team of over 200 Professional Engineers at two locations in Saudi Arabia – Riyadh and NEOM, as well as design centre support from partner operations in South Africa, India, and the UAE. Design was executed using BIM 360 for 3D design technology. The total installed value will exceed $10 Billion.',
     image: '/projects/Systra Oxagon.webp'
   },
   {
-    company: 'Tata Projects',
+    company: 'Pune Metro Line 3',
     role: 'Project Director',
-    location: 'India',
-    description: 'Project Director responsible for this US$ 250 million EPC project for rejuvenation of the Dravyavati River. Completed ahead of schedule and within budget.',
+    location: 'Pune, India',
+    description: 'Project Director for the Pune Metro Line 3, an EPC Civil Contract for a 23km long elevated metro with 23 stations including retail developments on mezzanine levels, and a Depot. valued at >$450 million. This project was interrupted by Covid. Nonetheless, we managed to complete the design and to use the lockdown to demolish 3Km of double-decker highway on the alignment.',
     image: '/projects/TATA pune metro rail line.jpg'
   },
   {
-    company: 'GFA Consulting Group GmbH',
-    role: 'Projects Director',
-    location: 'UAE/Afghanistan',
-    description: 'Managing a portfolio of projects as Project Management and Construction Management Consultant in Afghanistan: a US$400 million programme of 220/20kV Transmission lines and Substations.',
-    image: '/projects/GFA Hydro power plane.jpg'
+    company: 'Dravyavati River Project',
+    role: 'Project Director',
+    location: 'Jaipur, India',
+    description: 'Project Director for the Dravyavati River Project in Jaipur, a US$ 250 million EPC contract. The Project involved the Design Build of 170Mld of Sewage Treatment (5off WWTPs), 120kms of sewerage, 47km of lined channel, cleaning of four dams as well as three international standard parks and landscaping. Buildings incorporated into the design included Control buildings a City-wide communications centre, laboratories and offices as well as an Exhibition and Conference centre. The project was safely completed on time and under budget. The project was awarded a Project of the Year award by Construction Times in 2018. This involved a direct field staff of over 200 Engineers, 230 subcontractors and completing 26 million safe manhours with labour peaking at 8000.',
+    image: '/potential%20hero%202.webp'
   },
   {
-    company: 'WorleyParsons RSA (Pty) Ltd.',
-    role: 'Projects Director: Water',
-    location: 'South Africa',
-    description: 'Projects Director & BU Manager supervising more than 50 consulting engineering contracts related to water - mostly public infrastructure, including EPC contracts for World Bank funded projects.',
-    image: '/projects/Worley Abstraction point.jpg'
+    company: 'Seychelles',
+    role: 'Project Director',
+    location: 'Seychelles',
+    description: 'Seychelles This comprised of four seawater desalination projects, two on the main island of Providence and one each on Praslin and La Digue. These involved sensitive environmental intakes and brine outfalls without damaging the coral reefs. Furthermore, two sewage plants were built on Providence island in Victoria and BeauVallon Bay with sewerage reticulation from the beachfront hotels and homes.',
+    image: '/projects/seychelles.jpg'
   }
 ]
 

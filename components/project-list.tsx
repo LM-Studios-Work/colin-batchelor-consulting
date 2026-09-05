@@ -2,56 +2,46 @@
 
 import { useState } from 'react'
 
-const projects = [
+export const projects = [
   {
-    company: 'SYSTRA-SurbanaJurong JV',
-    link: 'https://www.linkedin.com/company/80405335/',
+    company: 'Oxagon (NEOM Industrial City)',
+    link: '',
     role: 'Project Director',
-    duration: '2 yrs 8 mos',
-    date: 'Jan 2021 - Aug 2023',
+    duration: '',
+    date: '',
     location: 'Saudi Arabia',
-    description: 'I served as Project Director for Oxagon (NEOM Industrial City) in Saudi Arabia for the Systra-Surbana-Jurong JV. We acted as the Multidisciplinary Design Consultant for the infrastructure of this Megaproject on the Red Sea Coast. The scope included comprehensive Wet and Dry Utilities, covering Water, Sewage, District Cooling, and HV to LV power reticulation. It also included Roads, Highways, Bridges, Tunnels, Landscaping, and Marine protection. I led a team of over 200 Professional Engineers across Riyadh and NEOM, integrating design centre support from partner operations in South Africa, India, and the UAE. We executed the design using BIM 360 for 3D design technology. The total installed value will exceed $10 Billion.',
+    description: 'Project Director for Oxagon (NEOM Industrial City) in Saudi Arabia for Systra-Surbana-Jurong JV as Multidisciplinary Design Consultant for the infrastructure of this Megaproject on the Red Sea Coast. The scope included Wet and Dry Utilities - Water, Sewage, District Cooling HV (380kV), MV (33kV), LV (14kV) reticulation and so on; Roads, Highways, Bridges and Tunnels (Cut & Cover, TBM), Landscaping and Marine protection. Leading a team of over 200 Professional Engineers at two locations in Saudi Arabia – Riyadh and NEOM, as well as design centre support from partner operations in South Africa, India, and the UAE. Design was executed using BIM 360 for 3D design technology. The total installed value will exceed $10 Billion.',
     image: '/projects/Systra Oxagon.webp'
   },
   {
-    company: 'Tata Projects — Dravyavati River Project',
-    link: 'https://www.linkedin.com/company/155507/',
+    company: 'Pune Metro Line 3',
+    link: '',
     role: 'Project Director',
     duration: '',
-    date: 'Jul 2016 - Dec 2020',
-    location: 'Jaipur, India',
-    description: 'I was the Project Director responsible for this US$250 million EPC project for the rejuvenation of the Dravyavati River in Jaipur. Rapid urbanisation and industrialisation had resulted in a build-up of municipal solid waste while untreated sewage discharged into the river, polluting the environment and creating a public health hazard.\nWe intercepted sewage flows into a sewer network running along the riverbank and built five Sewage Treatment Plants for 170 Mld. The treated water was returned to the river, transforming it from an open drain into a restored urban waterway with landscaped banks, recreational spaces, and a clean flowing river.\nThe project was completed ahead of schedule and within budget, and has become a benchmark for river rejuvenation projects in India.',
-    image: '/projects/TATA pune metro rail line.jpg'
-  },
-  {
-    company: 'Tata Projects — Pune Elevated Metro',
-    link: 'https://www.linkedin.com/company/155507/',
-    role: 'Project Director',
-    duration: '',
-    date: 'Jul 2016 - Dec 2020',
+    date: '',
     location: 'Pune, India',
-    description: 'This 23.3-km corridor with 23 stations will be the first metro project in India operating on a public-private-partnership (PPP) model following the New Metro Rail Policy of 2017. Tata Projects serves as the EPC partner supporting the consortium.',
+    description: 'Project Director for the Pune Metro Line 3, an EPC Civil Contract for a 23km long elevated metro with 23 stations including retail developments on mezzanine levels, and a Depot. valued at >$450 million. This project was interrupted by Covid. Nonetheless, we managed to complete the design and to use the lockdown to demolish 3Km of double-decker highway on the alignment.',
     image: '/projects/TATA pune metro rail line.jpg'
   },
   {
-    company: 'GFA Consulting Group GmbH',
-    link: 'https://www.linkedin.com/company/1062418/',
-    role: 'Projects Director',
-    duration: '1 yr 10 mos',
-    date: 'Sep 2014 - Jun 2016',
-    location: 'UAE/Afghanistan',
-    description: 'I managed a portfolio of projects as the Project Management and Construction Management Consultant in Afghanistan. This included a US$400 million programme of 220/20kV Transmission lines and Substations, alongside an 18MW hydropower refurbishment. The projects were a multi-donor effort funded by the World Bank, USAID, and the ADB. My key responsibilities included design reviews and approvals, and full lifecycle project management across budget, schedule, scope, and quality. I also oversaw inspection, testing, construction supervision, commissioning, and acceptance test witnessing.',
-    image: '/projects/GFA Hydro power plane.jpg'
+    company: 'Dravyavati River Project',
+    link: '',
+    role: 'Project Director',
+    duration: '',
+    date: '',
+    location: 'Jaipur, India',
+    description: 'Project Director for the Dravyavati River Project in Jaipur, a US$ 250 million EPC contract. The Project involved the Design Build of 170Mld of Sewage Treatment (5off WWTPs), 120kms of sewerage, 47km of lined channel, cleaning of four dams as well as three international standard parks and landscaping. Buildings incorporated into the design included Control buildings a City-wide communications centre, laboratories and offices as well as an Exhibition and Conference centre. The project was safely completed on time and under budget. The project was awarded a Project of the Year award by Construction Times in 2018. This involved a direct field staff of over 200 Engineers, 230 subcontractors and completing 26 million safe manhours with labour peaking at 8000.',
+    image: '/potential%20hero%202.webp'
   },
   {
-    company: 'WorleyParsons RSA (Pty) Ltd.',
-    link: 'https://www.linkedin.com/company/6677/',
-    role: 'Projects Director: Water',
-    duration: '2 yrs 8 mos',
-    date: 'Feb 2012 - Sep 2014',
-    location: 'South Africa',
-    description: 'As Projects Director and Business Unit Manager, I supervised more than 50 consulting engineering contracts related to water. These were predominantly public infrastructure mandates. Significant projects included sedimentation tanks for Rand Water, Zeekoegat, Boskrans, and Klipspruit WWTWs. I oversaw feasibility studies for SWRO plants in Cape Town and Saldhana Bay, as well as storage reservoirs for Joburg Water and Tshwane Metro. EPCM, Industrial, and Mining projects included sewage treatment for Assmang and water management for Sishen Mine in the Northern Cape. I also managed water balances for an Eskom power station using Goldsim software. EPC Turnkey contracts for the subsidiary Basil Read Matomo involved bidding a 50MLD WTW for Tshwane Metro and several World Bank funded bulk infrastructure projects in Malawi.',
-    image: '/projects/Worley Abstraction point.jpg'
+    company: 'Seychelles',
+    link: '',
+    role: 'Project Director',
+    duration: '',
+    date: '',
+    location: 'Seychelles',
+    description: 'Seychelles This comprised of four seawater desalination projects, two on the main island of Providence and one each on Praslin and La Digue. These involved sensitive environmental intakes and brine outfalls without damaging the coral reefs. Furthermore, two sewage plants were built on Providence island in Victoria and BeauVallon Bay with sewerage reticulation from the beachfront hotels and homes.',
+    image: '/projects/seychelles.jpg'
   }
 ]
 

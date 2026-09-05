@@ -29,7 +29,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="map-section"><div className="map-heading"><div><div className="about-kicker">INTERNATIONAL EXPERIENCE</div><h2>Programmes delivered across borders.</h2></div><p>From South Africa to the Gulf, South Asia and Sub-Saharan Africa.</p></div><WorkMap /></section>
+      <section className="map-section"><div className="map-heading"><div><div className="about-kicker">INTERNATIONAL EXPERIENCE</div><h2>Programmes delivered across borders.</h2></div></div><WorkMap /></section>
     </main>
   )
 }

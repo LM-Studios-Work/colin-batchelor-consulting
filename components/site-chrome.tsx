@@ -80,6 +80,7 @@ export function SiteHeader() {
       <aside ref={menuRef} id="mobile-navigation" className={`mobile-nav-panel${isOpen ? ' is-open' : ''}`} aria-label="Mobile navigation" aria-hidden={!isOpen}>
         <div className="mobile-nav-header"><span className="mobile-nav-label">Menu</span><button type="button" className="mobile-nav-close" onClick={closeMenu} aria-label="Close navigation menu">×</button></div>
         <nav className="mobile-nav-links" aria-label="Mobile primary navigation">
+          <a href="/" className={linkClass(pathname === '/')} onClick={closeMenu}>Home</a>
           <a href="/about" className={linkClass(isAbout)} onClick={closeMenu}>About</a>
           <button 
             type="button" 
@@ -148,11 +149,49 @@ export function ClientsStrip() {
 
 export function SiteFooter() {
   return (
-    <footer>
-      <div className="footer-brand"><img src={logoUrl} alt="Colin Batchelor Consulting" /><p>Complex infrastructure. Clear leadership.</p></div>
-      <div className="footer-links"><strong>Navigate</strong><a href="/about">About</a><a href="/services">Services</a><a href="/impact">Impact & Case Studies</a><a href="/#faq">FAQs</a></div>
-      <div className="footer-links"><strong>Services</strong><a href="/services">All services</a><a href="/services/project-management">Project Management</a><a href="/services#interim-management">Interim Management</a><a href="/services#business-development">Business Development</a></div>
-      <div className="footer-contact"><span>Available for senior assignments</span><a href="mailto:colin@colinbatchelor.com">colin@colinbatchelor.com</a><span>CEng · PMP · FIMWSA</span></div>
+    <footer className="site-footer">
+      <div className="footer-top">
+        <div className="footer-nav-groups">
+          <div className="footer-link-group">
+            <h4 className="footer-heading">Navigate</h4>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/impact">Impact & Case Studies</a></li>
+              <li><a href="/#faq">FAQs</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-link-group">
+            <h4 className="footer-heading">Services</h4>
+            <ul>
+              <li><a href="/services/project-management">Project Management</a></li>
+              <li><a href="/services#interim-management">Interim Management</a></li>
+              <li><a href="/services#business-development">Business Development</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-link-group contact-group">
+            <h4 className="footer-heading">Get in Touch</h4>
+            <p className="availability-text">Available for senior assignments globally.</p>
+            <a href="mailto:colin@colinbatchelor.com" className="footer-email">colin@colinbatchelor.com</a>
+            <a href="https://www.linkedin.com/in/colinbatchelor/" target="_blank" rel="noopener noreferrer" className="footer-linkedin-link">
+              Connect on LinkedIn
+            </a>
+            <div>
+              <a href="/contact" className="footer-contact-button">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="footer-bottom">
+        <p className="copyright">&copy; {new Date().getFullYear()} Colin Batchelor Consulting. All rights reserved.</p>
+        <div className="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
     </footer>
   )
 }

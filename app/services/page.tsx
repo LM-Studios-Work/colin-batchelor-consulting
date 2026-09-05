@@ -1,7 +1,7 @@
 const services = [
-  { id: 'project-management', number: '01', title: 'Project Management', summary: 'Experienced direction for complex programmes where delivery, governance and technical judgement must stay aligned.', items: ['Water and Sanitation', 'Power Generation and Distribution', 'Expert Witness'], href: '/services/project-management' },
-  { id: 'interim-management', number: '02', title: 'Interim Management', summary: 'Calm, accountable leadership when an organisation needs experienced hands at a critical moment.', items: ['Interim Executive', 'Business Rescue', 'Non-Executive Director'], href: '#interim-management' },
-  { id: 'business-development', number: '03', title: 'Business Development', summary: 'Practical commercial thinking to turn capability, relationships and opportunity into durable growth.', items: ['Strategy', 'Marketing and Sales', 'Executive Mentorship'], href: '#business-development' },
+  { id: 'project-management', number: '01', title: 'Project Management', summary: 'Experienced direction for complex programmes where delivery, governance and technical judgement must stay aligned.', items: ['Water and Sanitation', 'Power Generation and Distribution', 'Expert Witness'], href: '/services/project-management', image: '/project%20management.jpg' },
+  { id: 'interim-management', number: '02', title: 'Interim Management', summary: 'Calm, accountable leadership when an organisation needs experienced hands at a critical moment.', items: ['Interim Executive', 'Business Rescue', 'Non-Executive Director'], href: '#interim-management', image: '/interim%20management.webp' },
+  { id: 'business-development', number: '03', title: 'Business Development', summary: 'Practical commercial thinking to turn capability, relationships and opportunity into durable growth.', items: ['Strategy', 'Marketing and Sales', 'Executive Mentorship'], href: '#business-development', image: '/business%20rescue.jpeg' },
 ]
 
 export const metadata = { title: 'Services | Colin Batchelor Consulting', description: 'Project management, interim management and business development for complex infrastructure programmes.' }
@@ -9,8 +9,7 @@ export const metadata = { title: 'Services | Colin Batchelor Consulting', descri
 export default function ServicesPage() {
   return (
     <main>
-      <section className="about-intro">
-        <div className="about-kicker">MY MANDATES</div>
+      <section className="about-intro" style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%), url('/service%20page.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <h1>Innovative engineering solutions for complex challenges.</h1>
         <p className="about-lede">Explore the diverse industries I serve. I provide tailored expertise designed to meet the most demanding infrastructure requirements.</p>
       </section>
@@ -19,7 +18,7 @@ export default function ServicesPage() {
         <div className="service-page-cards" aria-label="Consulting services">
           {services.map((service) => (
             <article id={service.id} className="service-page-card" key={service.id}>
-            <div className="service-image service-page-image" aria-hidden="true" />
+            <div className="service-image service-page-image" aria-hidden="true" style={service.image ? { backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined} />
             <div className="service-content">
               <div className="service-page-card-top"><span>{service.number}</span><a className="service-card-link" href={service.href}>Explore <span aria-hidden="true">&#x2197;&#xFE0E;</span></a></div>
               <h2>{service.title}</h2>

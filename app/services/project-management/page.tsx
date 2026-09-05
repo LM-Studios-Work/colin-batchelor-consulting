@@ -20,11 +20,11 @@ export default function ProjectManagementPage() {
     <main>
       {/* Hero Section */}
       <section 
-        className="relative flex flex-col justify-center px-[5.3vw] pt-[96px] pb-[82px] bg-cover bg-center" 
-        style={{ backgroundImage: "linear-gradient(rgba(35,35,35,0.65), rgba(35,35,35,0.65)), url('/case%20study%20hero%20image.jpg')" }}
+        className="relative flex flex-col justify-center px-[5.3vw] pt-[96px] pb-[82px] bg-cover bg-bottom" 
+        style={{ backgroundImage: "linear-gradient(rgba(35,35,35,0.65), rgba(35,35,35,0.65)), url('/projects/seychelles.jpg')" }}
       >
         <div className="max-w-4xl text-white">
-          <p className="text-[#e8e6e1] text-[10px] font-bold tracking-[0.13em] uppercase mb-4">SERVICE 01 · PROJECT MANAGEMENT</p>
+          <p className="text-[#e8e6e1] text-[10px] font-bold tracking-[0.13em] uppercase mb-4">PROJECT MANAGEMENT</p>
           <h1 className="text-4xl md:text-5xl lg:text-[56px] leading-[1] font-semibold mb-6 font-serif tracking-tight">Make complex delivery feel deliberate.</h1>
           <div className="w-16 h-1 bg-[#b5122b] mb-6"></div>
           <p className="text-[17px] md:text-[19px] max-w-2xl leading-[1.6] text-gray-100">
@@ -44,7 +44,7 @@ export default function ProjectManagementPage() {
           </div>
           <div className="shrink-0 text-center md:text-left mt-2 md:mt-4">
             <a href="/contact" className="contact-button inline-flex items-center gap-3 transition-colors">
-              DISCUSS A MANDATE
+              DISCUSS
               <span className="text-lg font-normal translate-y-[-1px] ml-1">&#x2197;&#xFE0E;</span>
             </a>
           </div>
@@ -58,15 +58,15 @@ export default function ProjectManagementPage() {
           <div className="relative h-[450px] md:h-[600px] hidden md:block">
             <div 
               className="absolute top-0 right-[5%] w-[60%] h-[240px] bg-cover bg-center border-[6px] border-[#242424] shadow-2xl z-10" 
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80')" }}
+              style={{ backgroundImage: "url('/projects/Systra Oxagon.webp')" }}
             ></div>
             <div 
               className="absolute top-[200px] left-0 w-[65%] h-[200px] bg-cover bg-center border-[6px] border-[#242424] shadow-2xl z-20" 
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80')" }}
+              style={{ backgroundImage: "url('/projects/TATA pune metro rail line.jpg')" }}
             ></div>
             <div 
               className="absolute bottom-0 right-0 w-[75%] h-[240px] bg-cover bg-center border-[6px] border-[#242424] shadow-2xl z-30" 
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=80')" }}
+              style={{ backgroundImage: "url('/potential%20hero%202.webp')" }}
             ></div>
           </div>
           
@@ -102,7 +102,7 @@ export default function ProjectManagementPage() {
       <section className="contact service-page-contact">
         <p className="eyebrow">RETAINED LEADERSHIP</p>
         <h2>When the programme matters, the leadership should too.</h2>
-        <a className="contact-link" href="/contact">Discuss a mandate <span>&#x2197;&#xFE0E;</span></a>
+        <a className="contact-link" href="/contact">Discuss <span>&#x2197;&#xFE0E;</span></a>
       </section>
     </main>
   )
