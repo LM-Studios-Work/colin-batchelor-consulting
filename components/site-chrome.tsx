@@ -66,7 +66,7 @@ export function SiteHeader() {
       </a>
       <nav aria-label="Primary navigation">
         <a href="/about" className={isAbout ? 'nav-active' : ''}>About</a>
-        <div className="nav-menu"><a href="/services" className={`nav-menu-link ${isServices ? 'nav-active' : ''}`}>Services</a><div className="nav-dropdown"><a href="/services/project-management">Project Management</a><a href="/services#interim-management">Interim Management</a><a href="/services#business-development">Business Development</a></div></div>
+        <div className="nav-menu"><a href="/services" className={`nav-menu-link ${isServices ? 'nav-active' : ''}`}>Services</a><div className="nav-dropdown"><a href="/services/project-management">Project Management</a><a href="/services/interim-management">Interim Management</a><a href="/services/business-development">Business Development</a></div></div>
         <a href="/impact" className={pathname.startsWith('/impact') ? 'nav-active' : ''}>Impact & Case Studies</a>
         <a href="/#faq" className={isHome ? 'nav-active-home' : ''}>Testimonials</a>
       </nav>
@@ -94,8 +94,8 @@ export function SiteHeader() {
             <div className="mobile-dropdown-menu">
               <a href="/services" className={pathname === '/services' ? 'nav-active' : ''} onClick={closeMenu}>All Services</a>
               <a href="/services/project-management" className={pathname === '/services/project-management' ? 'nav-active' : ''} onClick={closeMenu}>Project Management</a>
-              <a href="/services#interim-management" onClick={closeMenu}>Interim Management</a>
-              <a href="/services#business-development" onClick={closeMenu}>Business Development</a>
+              <a href="/services/interim-management" onClick={closeMenu}>Interim Management</a>
+              <a href="/services/business-development" onClick={closeMenu}>Business Development</a>
             </div>
           )}
           <a href="/impact" className={linkClass(pathname.startsWith('/impact'))} onClick={closeMenu}>Impact & Case Studies</a>
@@ -166,8 +166,8 @@ export function SiteFooter() {
             <h4 className="footer-heading">Services</h4>
             <ul>
               <li><a href="/services/project-management">Project Management</a></li>
-              <li><a href="/services#interim-management">Interim Management</a></li>
-              <li><a href="/services#business-development">Business Development</a></li>
+              <li><a href="/services/interim-management">Interim Management</a></li>
+              <li><a href="/services/business-development">Business Development</a></li>
             </ul>
           </div>
           
