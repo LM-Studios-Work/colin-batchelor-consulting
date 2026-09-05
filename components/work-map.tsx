@@ -29,7 +29,7 @@ const countryMapping: Record<number, string> = {
 
 export function WorkMap() {
   const [selectedCountry, setSelectedCountry] = useState<number | null>(null)
-  const [popupPos, setPopupPos] = useState<{ x: number, y: number } | null>(null)
+  const [popupPos, setPopupPos] = useState<{ x: number, y: number, pointerOffset?: number } | null>(null)
 
   const handleCountryClick = (geo: any, evt: React.MouseEvent) => {
     const countryId = Number(geo.id)
@@ -46,9 +46,20 @@ export function WorkMap() {
         
         if (container) {
           const containerRect = container.getBoundingClientRect()
-          const cx = rect.left + rect.width / 2 - containerRect.left
+          let cx = rect.left + rect.width / 2 - containerRect.left
           const cy = Math.max(rect.top - containerRect.top, 0) // Anchor near top of country
-          setPopupPos({ x: cx, y: cy })
+          
+          let pointerOffset = 0
+          const modalHalfWidth = window.innerWidth < 700 ? 150 : 190
+          if (cx < modalHalfWidth) {
+            pointerOffset = cx - modalHalfWidth
+            cx = modalHalfWidth
+          } else if (cx > containerRect.width - modalHalfWidth) {
+            pointerOffset = cx - (containerRect.width - modalHalfWidth)
+            cx = containerRect.width - modalHalfWidth
+          }
+
+          setPopupPos({ x: cx, y: cy, pointerOffset })
         } else {
           setPopupPos({ x: evt.nativeEvent.offsetX, y: evt.nativeEvent.offsetY })
         }
@@ -135,7 +146,7 @@ export function WorkMap() {
           border: '1px solid var(--border)',
           boxShadow: '0 12px 30px rgba(0,0,0,.15)',
           zIndex: 10,
-          maxWidth: '380px',
+          maxWidth: 'min(380px, calc(100vw - 48px))',
           width: 'max-content',
           maxHeight: '400px',
           overflowY: 'auto'
@@ -144,7 +155,7 @@ export function WorkMap() {
           <div style={{
             position: 'absolute',
             bottom: '-8px',
-            left: '50%',
+            left: `calc(50% + ${popupPos.pointerOffset || 0}px)`,
             transform: 'translateX(-50%)',
             width: '0',
             height: '0',
