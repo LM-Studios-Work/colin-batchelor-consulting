@@ -18,15 +18,16 @@ export default function ServicesPage() {
         <div className="service-page-cards" aria-label="Consulting services">
           {services.map((service) => (
             <article id={service.id} className="service-page-card" key={service.id}>
-            <div className="service-image service-page-image" aria-hidden="true" style={service.image ? { backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined} />
-            <div className="service-content">
-              <div className="service-page-card-top"><span>{service.number}</span><a className="service-card-link" href={service.href}>Explore <span aria-hidden="true">&#x2197;&#xFE0E;</span></a></div>
-              <h2>{service.title}</h2>
-              <p>{service.summary}</p>
-              <ul>{service.items.map((item) => <li key={item}>{item}</li>)}</ul>
-
-            </div>
-          </article>
+              <a href={service.href} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div className="service-image service-page-image" aria-hidden="true" style={service.image ? { backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined} />
+                <div className="service-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                  <div className="service-page-card-top"><span>{service.number}</span><span className="service-card-link" style={{ color: '#b5122b', fontWeight: 'bold', fontSize: '11px', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Learn more <span aria-hidden="true" style={{ fontSize: '15px', marginLeft: '4px', fontWeight: 'normal', transform: 'translateY(-1px)', display: 'inline-block' }}>&#x2197;&#xFE0E;</span></span></div>
+                  <h2>{service.title}</h2>
+                  <p>{service.summary}</p>
+                  <ul style={{ flexGrow: 1 }}>{service.items.map((item) => <li key={item}>{item}</li>)}</ul>
+                </div>
+              </a>
+            </article>
         ))}
       </div>
       </section>
