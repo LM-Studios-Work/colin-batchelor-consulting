@@ -3,7 +3,7 @@ const heroImage = 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?
 
 const services = [
   { title: 'Project Management', items: ['Water and Sanitation', 'Power Generation and Distribution', 'Expert Witness'], image: '/project%20management.jpg', link: '/services/project-management' },
-  { title: 'Interim Management', items: ['Short Term Assignments', 'Business Rescue', 'Non-Executive Director'], image: '/interim%20management.webp', link: '/services/interim-management' },
+  { title: 'Interim Management', items: ['Short Term Assignments', 'Business Rescue', 'Non-Executive Director'], image: '/about%20page%20hero.jpg', link: '/services/interim-management' },
   { title: 'Business Development', items: ['Strategy', 'Marketing and Sales', 'Executive Mentorship'], image: '/business%20rescue.jpeg', link: '/services/business-development' },
 ]
 

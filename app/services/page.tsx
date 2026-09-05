@@ -1,7 +1,7 @@
 const services = [
   { id: 'project-management', number: '01', title: 'Project Management', summary: 'Experienced direction for complex programmes where delivery, governance and technical judgement must stay aligned.', items: ['Water and Sanitation', 'Power Generation and Distribution', 'Expert Witness'], href: '/services/project-management', image: '/project%20management.jpg' },
-  { id: 'interim-management', number: '02', title: 'Interim Management', summary: 'Calm, accountable leadership when an organisation needs experienced hands at a critical moment.', items: ['Interim Executive', 'Business Rescue', 'Non-Executive Director'], href: '#interim-management', image: '/interim%20management.webp' },
-  { id: 'business-development', number: '03', title: 'Business Development', summary: 'Practical commercial thinking to turn capability, relationships and opportunity into durable growth.', items: ['Strategy', 'Marketing and Sales', 'Executive Mentorship'], href: '#business-development', image: '/business%20rescue.jpeg' },
+  { id: 'interim-management', number: '02', title: 'Interim Management', summary: 'Calm, accountable leadership when an organisation needs experienced hands at a critical moment.', items: ['Interim Executive', 'Business Rescue', 'Non-Executive Director'], href: '/services/interim-management', image: '/about%20page%20hero.jpg' },
+  { id: 'business-development', number: '03', title: 'Business Development', summary: 'Practical commercial thinking to turn capability, relationships and opportunity into durable growth.', items: ['Strategy', 'Marketing and Sales', 'Executive Mentorship'], href: '/services/business-development', image: '/business%20rescue.jpeg' },
 ]
 
 export const metadata = { title: 'Services | Colin Batchelor Consulting', description: 'Project management, interim management and business development for complex infrastructure programmes.' }
