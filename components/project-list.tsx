@@ -6,7 +6,7 @@ export const projects = [
   {
     company: 'Oxagon (NEOM Industrial City)',
     link: '',
-    role: 'Project Director',
+    role: '',
     duration: '',
     date: '',
     location: 'Saudi Arabia',
@@ -16,7 +16,7 @@ export const projects = [
   {
     company: 'Pune Metro Line 3',
     link: '',
-    role: 'Project Director',
+    role: '',
     duration: '',
     date: '',
     location: 'Pune, India',
@@ -26,7 +26,7 @@ export const projects = [
   {
     company: 'Dravyavati River Project',
     link: '',
-    role: 'Project Director',
+    role: '',
     duration: '',
     date: '',
     location: 'Jaipur, India',
@@ -36,7 +36,7 @@ export const projects = [
   {
     company: 'Seychelles',
     link: '',
-    role: 'Project Director',
+    role: '',
     duration: '',
     date: '',
     location: 'Seychelles',
@@ -70,7 +70,7 @@ export function ProjectList() {
               )}
             </h3>
             <p className="text-[var(--primary)] text-[10px] font-[700] uppercase tracking-[.1em] border-b border-[var(--border)] pb-3 mb-5">
-              {project.role} &middot; {project.date} &middot; {project.location}
+              {project.date} {project.date ? '\u00B7' : ''} {project.location}
             </p>
             <div className="text-[#575550] text-[15px] leading-[1.7] flex flex-col gap-4">
               {project.description.split('\n').map((para, i) => (

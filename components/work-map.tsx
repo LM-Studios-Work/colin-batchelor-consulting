@@ -5,24 +5,30 @@ import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
 import { projects } from '@/components/project-list'
 
 const geographyUrl = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
-const workedCountries = new Set([4, 72, 356, 404, 508, 516, 566, 646, 682, 686, 690, 710, 716, 784, 800, 834, 894])
+const workedCountries = new Set([4, 72, 356, 404, 426, 454, 458, 478, 508, 516, 566, 646, 682, 686, 690, 710, 716, 748, 784, 800, 826, 834, 894])
 
 const countryMapping: Record<number, string> = {
-  356: 'India',
-  682: 'Saudi Arabia',
-  690: 'Seychelles',
-  710: 'South Africa',
   4: 'Afghanistan',
-  784: 'United Arab Emirates',
   72: 'Botswana',
+  356: 'India',
   404: 'Kenya',
+  426: 'Lesotho',
+  454: 'Malawi',
+  458: 'Malaysia',
+  478: 'Mauritania',
   508: 'Mozambique',
   516: 'Namibia',
   566: 'Nigeria',
   646: 'Rwanda',
+  682: 'Saudi Arabia',
   686: 'Senegal',
+  690: 'Seychelles',
+  710: 'South Africa',
   716: 'Zimbabwe',
+  748: 'Eswatini',
+  784: 'United Arab Emirates',
   800: 'Uganda',
+  826: 'United Kingdom',
   834: 'Tanzania',
   894: 'Zambia',
 }
@@ -70,17 +76,96 @@ export function WorkMap() {
   const selectedName = selectedCountry ? countryMapping[selectedCountry] : null
   
   // Extended projects that aren't in the carousel/list but are mentioned on the page
-  const extendedProjects: Record<string, { company: string, role?: string, link?: string }[]> = {
+  const extendedProjects: Record<string, string[]> = {
+    'Afghanistan': [
+      'Design and construction of 220kV overhead transmission line from Kabul to Kandahar (via Ghazni), including two AIS substations',
+      'Refurbishment of a 18MW hydropower plant at Kajaki dam',
+      'Medium voltage distribution in Kabul'
+    ],
+    'Mauritania': [
+      '"Pit to Port” infrastructure design linking coastal desalination with Iron Ore mining in the interior. Working with London and Beijing offices.'
+    ],
+    'Namibia': [
+      'Von Bach waterworks',
+      'Goreangab water reclamation works',
+      'Offshore phosphate mining.'
+    ],
     'South Africa': [
-      { company: 'ESKOM Power Stations (Majuba, Kendal, Matimba)', role: 'Project Director' },
-      { company: 'Saldanha Steel & Columbus Steel Mills', role: 'Project Director' },
-      { company: 'Hulett\'s Aluminium', role: 'Project Director' },
-      { company: 'Alusaf', role: 'Project Director' },
-      { company: 'Sappi Ngodwana Ozone Plant', role: 'Project Director' },
-      { company: 'Various Water & Sanitation projects', role: 'Project Director' }
+      'Dozens of projects, both industrial and municipal throughout the country.',
+      'Sasol 2 & 3 utilities, including Ash and Coal handling.',
+      'Water treatment plants for Eskom, Kendal and Mujuba',
+      'Standby Generator sets for Eskom Matimba',
+      'Standby Generators for the mines, both Gas Turbines and Diesel, fixed and mobile.',
+      'ID Fans (KK&K) for Majuba PS',
+      'Air, Oxygen and Fuel Gas compressors for Afrox and Egoli Gas',
+      'Industrial water and effluent treatment for Columbus Stainless Steel mill.',
+      'Hydraulic systems for Saldhana Steel Mill',
+      'Hydraulic systems for Hulletts Aluminium mill',
+      'Carbon recovery plants for Alusaf and Iscor',
+      'Worlds largest Ozone plant for Sappi Ngodwana',
+      'Water treatment plants for Rand Water',
+      'Water treatment plants for Umgeni Water',
+      'Sewage Treatment Plants for Durban Corporation',
+      'Sewage treatment and Sludge drying for Cape Town',
+      'and so on.'
+    ],
+    'Lesotho': [
+      'Lesotho Highlands Water Scheme, tunnel lining'
+    ],
+    'Eswatini': [
+      'Mbabane Sewage Treatment Plant'
+    ],
+    'Mozambique': [
+      'Business development of several water treatment plants for Maputo and Beira'
+    ],
+    'Zambia': [
+      'Water and Effluent treatment for mines in the copper belt'
+    ],
+    'Zimbabwe': [
+      'Harare Water Treatment plant'
+    ],
+    'Botswana': [
+      'North -South Carrier bulk water transfer scheme and associated watereworks.',
+      'Gaborone STP.'
+    ],
+    'Malawi': [
+      'Business development for EPC construction of water towers and storage tanks funded by the World Bank'
+    ],
+    'Saudi Arabia': [
+      'Design of infrastructure for Oxagon (NEOM Industrial Port)',
+      'Business Development of various infrastructure in Riyadh.',
+      'Rail infrastructure in AlUla'
+    ],
+    'United Arab Emirates': [
+      'Volta utilities plant in Ruais Abu Dhabi comprising SWRO, Cooling Water, Steam Generation Substations etc.'
+    ],
+    'Kenya': [
+      'Business development for Water Treatment Plant in Nyeri',
+      'Business development of UASB effluent treatment plant for Guinness.'
+    ],
+    'Tanzania': [
+      'Dar es Salaam concession for City Water'
+    ],
+    'Seychelles': [
+      'SWRO for three islands, Providence, Praslin and La Digue',
+      'Sewage Treatment and reticulation at Victoria and Beau Vallon Bay.'
+    ],
+    'Nigeria': [
+      'LAB (Linear Alkyl Benzene) plant in Kaduna',
+      'Carbon Black plant in Warri',
+      'Two UASB effluent treatment plants for Guinness (Diageo)',
+      'Project management training for NNPC.'
     ],
     'India': [
-      { company: 'Dharavi WwTF', role: 'Project Director' }
+      'Dravyavati River Rejuvenation Project in Jaipur',
+      'Pune Elevated Metro line 3 in Pune',
+      'Dharavi Wastewater Treatment Facility in Mumbai'
+    ],
+    'United Kingdom': [
+      'Mossmorran Ethylene petrochemical plant'
+    ],
+    'Malaysia': [
+      'Carbon Recycling Plant near Kuala Lumpur'
     ]
   }
 
@@ -88,10 +173,7 @@ export function WorkMap() {
     ? projects.filter(p => p.location.includes(selectedName))
     : []
 
-  if (selectedName && extendedProjects[selectedName]) {
-    const additional = extendedProjects[selectedName].map(p => ({ ...p, location: selectedName } as any))
-    relatedProjects = [...relatedProjects, ...additional]
-  }
+  const bullets = selectedName && extendedProjects[selectedName] ? extendedProjects[selectedName] : []
 
   const excludedCountries = new Set([
     10, // Antarctica
@@ -182,12 +264,17 @@ export function WorkMap() {
           </button>
           <h3 style={{ margin: '0 0 16px', color: 'var(--primary)', fontFamily: 'var(--font-display)', fontSize: '24px', fontWeight: 600 }}>{selectedName}</h3>
           
-          {relatedProjects.length > 0 ? (
+          {bullets.length > 0 ? (
+            <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: 1.6, color: 'var(--foreground)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {bullets.map((bullet, i) => (
+                <li key={i}>{bullet}</li>
+              ))}
+            </ul>
+          ) : relatedProjects.length > 0 ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {relatedProjects.map((p, i) => (
                 <div key={i} style={{ borderBottom: i < relatedProjects.length - 1 ? '1px solid #eee' : 'none', paddingBottom: i < relatedProjects.length - 1 ? '16px' : '0' }}>
                   <h4 style={{ margin: '0 0 6px', fontSize: '15px', fontWeight: 600 }}>{p.company}</h4>
-                  <p style={{ margin: '0 0 8px', fontSize: '11px', color: 'var(--primary)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.08em' }}>{p.role}</p>
                   {(p.image || p.description) && (
                     <a href={`/impact#${p.company.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} style={{ fontSize: '13px', color: 'var(--foreground)', textDecoration: 'underline', textUnderlineOffset: '4px', textDecorationColor: 'var(--border)' }}>View Case Study</a>
                   )}
