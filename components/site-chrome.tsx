@@ -174,7 +174,7 @@ export function SiteFooter() {
           <div className="footer-link-group contact-group">
             <h4 className="footer-heading">Get in Touch</h4>
             <p className="availability-text">Available for senior assignments globally.</p>
-            <a href="mailto:colin@colinbatchelor.com" className="footer-email">colin@colinbatchelor.com</a>
+            <a href="mailto:colin@cbconsult.co.za" className="footer-email">colin@cbconsult.co.za</a>
             <a href="https://www.linkedin.com/in/colinbatchelor/" target="_blank" rel="noopener noreferrer" className="footer-linkedin-link">
               Connect on LinkedIn
             </a>

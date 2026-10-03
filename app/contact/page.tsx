@@ -24,8 +24,8 @@ export default function ContactPage() {
             <div className="mt-14 space-y-8">
               <div>
                 <h3 className="text-[11px] font-bold uppercase tracking-[.08em] text-white mb-2">Direct Contact</h3>
-                <a href="mailto:colin@colinbatchelor.com" className="text-[#b5122b] hover:underline underline-offset-4 text-[15px] font-medium transition-all">
-                  colin@colinbatchelor.com
+                <a href="mailto:colin@cbconsult.co.za" className="text-[#b5122b] hover:underline underline-offset-4 text-[15px] font-medium transition-all">
+                  colin@cbconsult.co.za
                 </a>
               </div>
             </div>
