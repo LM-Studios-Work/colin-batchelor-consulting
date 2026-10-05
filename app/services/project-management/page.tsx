@@ -2,7 +2,7 @@ import { ProjectsCarousel } from '@/components/projects-carousel'
 
 export const metadata = {
   title: 'Project Management | Colin Batchelor Consulting',
-  description: 'Senior project management and delivery leadership for complex infrastructure programmes.'
+  description: 'Senior project management and delivery leadership for critical infrastructure and engineering programmes.'
 }
 
 const solutions = [
@@ -28,7 +28,7 @@ export default function ProjectManagementPage() {
           <h1 className="text-4xl md:text-5xl lg:text-[56px] leading-[1] font-semibold mb-6 font-serif tracking-tight">Expert Project Direction & Delivery Leadership.</h1>
           <div className="w-16 h-1 bg-[#b5122b] mb-6"></div>
           <p className="text-[17px] md:text-[19px] max-w-2xl leading-[1.6] text-gray-100">
-            I provide senior project direction and consulting for complex infrastructure programmes, stepping in to ensure critical mandates are delivered successfully.
+            I provide senior project direction and consulting for critical infrastructure and engineering programmes, stepping in to ensure strategic mandates are delivered successfully.
           </p>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function ProjectManagementPage() {
       {/* Projects Carousel Section */}
       <section className="px-[5.3vw] py-[90px] bg-[#f9f9f9] text-center">
         <p className="text-[#b5122b] font-bold text-[10px] tracking-[0.13em] mb-4 uppercase">RELEVANT EXPERIENCE</p>
-        <h2 className="text-[34px] md:text-[44px] font-semibold mb-6 uppercase font-serif tracking-tight text-[#292827]">PROVEN DELIVERY IN COMPLEX INFRASTRUCTURE</h2>
+        <h2 className="text-[34px] md:text-[44px] font-semibold mb-6 uppercase font-serif tracking-tight text-[#292827]">PROVEN DELIVERY AND EXECUTIVE LEADERSHIP</h2>
         <div className="w-16 h-[3px] bg-[#b5122b] mx-auto mb-16"></div>
         
         <div className="max-w-[1400px] mx-auto">

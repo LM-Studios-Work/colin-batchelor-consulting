@@ -2,7 +2,7 @@ import { ProjectsCarousel } from '@/components/projects-carousel'
 
 export const metadata = {
   title: 'Interim Management | Colin Batchelor Consulting',
-  description: 'Interim executive leadership and recovery mandates for complex infrastructure programmes.'
+  description: 'Interim executive leadership and recovery mandates for critical engineering and infrastructure programmes.'
 }
 
 const solutions = [
@@ -25,7 +25,7 @@ export default function InterimManagementPage() {
           <h1 className="text-4xl md:text-5xl lg:text-[56px] leading-[1] font-semibold mb-6 font-serif tracking-tight">Interim Executive Leadership.</h1>
           <div className="w-16 h-1 bg-[#b5122b] mb-6"></div>
           <p className="text-[17px] md:text-[19px] max-w-2xl leading-[1.6] text-gray-100">
-            Stepping in to stabilize, lead, and recover critical infrastructure mandates when executive stability is paramount.
+            Stepping in to stabilize, lead, and recover critical projects and engineering businesses when executive stability is paramount.
           </p>
         </div>
       </section>
@@ -53,9 +53,9 @@ export default function InterimManagementPage() {
         <div className="max-w-[1000px] mx-auto text-center md:text-left flex flex-col md:flex-row gap-12">
           <div className="flex-1">
             <p className="text-[#b5122b] font-bold text-[10px] tracking-[0.13em] mb-4 uppercase">THE CHALLENGE & THE APPROACH</p>
-            <h3 className="text-[28px] md:text-[34px] font-serif font-semibold leading-tight mb-6 text-[#292827]">Stabilising complex projects during critical transitions.</h3>
+            <h3 className="text-[28px] md:text-[34px] font-serif font-semibold leading-tight mb-6 text-[#292827]">Stabilising operations and projects during critical transitions.</h3>
             <p className="text-[#575550] text-[16px] md:text-[17px] leading-[1.7] mb-6">
-              In the world of complex engineering and infrastructure, leadership vacuums can quickly lead to commercial exposure and schedule drift. Whether caused by sudden departures, project distress, or rapid scaling requirements, the lack of experienced executive oversight is a critical risk that must be mitigated immediately.
+              In the world of engineering and infrastructure, leadership vacuums can quickly lead to commercial exposure and schedule drift. Whether caused by sudden departures, project distress, or rapid scaling requirements, the lack of experienced executive oversight is a critical risk that must be mitigated immediately.
             </p>
             <p className="text-[#575550] text-[16px] md:text-[17px] leading-[1.7]">
               My interim management approach is built on rapid assessment and decisive action. I integrate directly into the existing organizational structure to provide immediate stability, clear bottlenecks, and restore stakeholder confidence. By applying decades of hands-on delivery experience, I ensure that critical path activities continue uninterrupted while a long-term leadership strategy is formulated and executed.
@@ -103,7 +103,7 @@ export default function InterimManagementPage() {
       {/* Projects Carousel Section */}
       <section className="px-[5.3vw] py-[90px] bg-[#f9f9f9] text-center">
         <p className="text-[#b5122b] font-bold text-[10px] tracking-[0.13em] mb-4 uppercase">RELEVANT EXPERIENCE</p>
-        <h2 className="text-[34px] md:text-[44px] font-semibold mb-6 uppercase font-serif tracking-tight text-[#292827]">PROVEN DELIVERY IN COMPLEX INFRASTRUCTURE</h2>
+        <h2 className="text-[34px] md:text-[44px] font-semibold mb-6 uppercase font-serif tracking-tight text-[#292827]">PROVEN DELIVERY AND EXECUTIVE LEADERSHIP</h2>
         <div className="w-16 h-[3px] bg-[#b5122b] mx-auto mb-16"></div>
         
         <div className="max-w-[1400px] mx-auto">

@@ -55,7 +55,7 @@ export default function BusinessDevelopmentPage() {
         <div className="max-w-[800px] mx-auto text-center md:text-left">
           <h2 className="text-[34px] md:text-[40px] font-serif font-semibold leading-tight mb-6 text-[#292827]">I step in to rebuild and grow engineering businesses.</h2>
           <p className="text-[#575550] text-[16px] md:text-[17px] leading-[1.7] mb-8">
-            When a company is distressed or stagnant, standard sales and marketing tactics are not enough. I offer hands-on executive leadership to completely restructure the organisation. I evaluate the core problems, set a new strategic direction, and realign the corporate structure for sustainable growth. I have successfully guided liquidated entities back to profitability and scaled established operations into market leaders.
+            When a company is distressed or stagnant, standard sales and marketing tactics are not enough. Whether realigning a corporate division or providing the executive bandwidth for a compact team where individuals wear multiple hats, I evaluate the core problems and set a new strategic direction. I offer hands-on executive leadership to realign the corporate structure for sustainable growth. I have successfully guided liquidated entities back to profitability and scaled established operations into market leaders.
           </p>
           <a href="/contact" className="contact-button inline-flex items-center gap-3 transition-colors">
             DISCUSS
@@ -70,7 +70,7 @@ export default function BusinessDevelopmentPage() {
           <p className="text-[#b5122b] font-bold text-[10px] tracking-[0.13em] mb-4 uppercase">WHAT I DO</p>
           <h3 className="text-[28px] md:text-[34px] font-serif font-semibold leading-tight mb-6 text-[#292827]">I treat your business turnaround as a critical project.</h3>
           <p className="text-[#575550] text-[16px] md:text-[17px] leading-[1.7] mb-6">
-            I provide the rigorous governance, planning, and execution required to save or expand a company. My service involves conducting a hard analysis of your existing baseline, making the difficult structural decisions that internal management often avoids, and realigning your personnel toward a defined goal.
+            I adapt my approach to your scale, providing the rigorous governance needed to save a distressed operation, or the hands-on executive mentorship required to help a small company manage rapid volume. My service involves conducting a hard analysis of your existing baseline, making the difficult structural decisions that internal management often avoids, and realigning your personnel toward a defined goal.
           </p>
           <p className="text-[#575550] text-[16px] md:text-[17px] leading-[1.7]">
             My offering is straightforward. Whether I am taking your business out of liquidation or building a new division for an emerging market, I build a resilient operational structure, place the right team in charge, and personally drive the implementation plan until we achieve the targeted market share.

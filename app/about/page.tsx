@@ -26,6 +26,7 @@ export default function AboutPage() {
           <p>As a Senior Executive and Project Director, I have more than 45 years of experience leading EPCM, PMC, and EPC programmes across Water &amp; Wastewater, Power Generation &amp; Distribution, Process Industries, Petrochemical &amp; Mineral Processing, Solid Waste Management, and Elevated Metrorail.</p>
           <p>Across mandates in Afghanistan, India, UAE, Saudi Arabia, Sub-Saharan Africa, and South Africa, I have led major capital programmes, turnaround operations, and engineering teams of more than 200 people. My experience spans design management, licensed technologies, construction oversight, commercial leadership, JV formation, PPPs, and dispute resolution.</p>
           <p>I have directed landmark projects including NEOM Oxagon, the Dravyavati River Project, the Dharavi WwTF, ESKOM power stations (Majuba, Kendal, Matimba), Saldanha Steel and Columbus Steel Mills, Hulett's Aluminium, Alusaf, the Sappi Ngodwana Ozone plant, and numerous Water and Sanitation projects in South Africa and SSA. My experience includes collaboration with multilateral agencies such as the WB, AfDB, and ADB.</p>
+          <p>The principles of clear strategy, structural organisation, and disciplined implementation that I apply to international capital programmes are the exact same principles I use to help smaller companies overcome operational bottlenecks and scale effectively.</p>
         </div>
       </section>
 

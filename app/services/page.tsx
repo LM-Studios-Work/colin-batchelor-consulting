@@ -1,17 +1,17 @@
 const services = [
-  { id: 'project-management', number: '01', title: 'Project Management', summary: 'Experienced direction for complex programmes where delivery, governance and technical judgement must stay aligned.', items: ['Water and Sanitation', 'Power Generation and Distribution', 'Expert Witness'], href: '/services/project-management', image: '/project%20management.jpg' },
+  { id: 'project-management', number: '01', title: 'Project Management', summary: 'Experienced direction for critical programmes where delivery, governance and technical judgement must stay aligned.', items: ['Water and Sanitation', 'Power Generation and Distribution', 'Expert Witness'], href: '/services/project-management', image: '/project%20management.jpg' },
   { id: 'interim-management', number: '02', title: 'Interim Management', summary: 'Calm, accountable leadership when an organisation needs experienced hands at a critical moment.', items: ['Interim Executive', 'Business Rescue', 'Non-Executive Director'], href: '/services/interim-management', image: '/about%20page%20hero.jpg' },
   { id: 'business-development', number: '03', title: 'Business Development', summary: 'Building a business instead of physical assets. A special type of project involving strategy, structure, organisation, and implementation.', items: ['Business Analysis', 'Strategy & Structure', 'Organisational Build'], href: '/services/business-development', image: '/business%20rescue.jpeg' },
 ]
 
-export const metadata = { title: 'Services | Colin Batchelor Consulting', description: 'Project management, interim management and business development for complex infrastructure programmes.' }
+export const metadata = { title: 'Services | Colin Batchelor Consulting', description: 'Project management, interim management and business development for strategic infrastructure and engineering programmes.' }
 
 export default function ServicesPage() {
   return (
     <main>
       <section className="about-intro" style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%), url('/service%20page.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <h1>Innovative engineering solutions for complex challenges.</h1>
-        <p className="about-lede">Explore the diverse industries I serve. I provide tailored expertise designed to meet the most demanding infrastructure requirements.</p>
+        <h1>Innovative engineering solutions for critical challenges.</h1>
+        <p className="about-lede">Explore the diverse industries I serve. I provide tailored expertise designed to meet the most demanding infrastructure and organizational requirements.</p>
       </section>
       
       <section className="services-directory-page" style={{ paddingTop: '90px' }}>
